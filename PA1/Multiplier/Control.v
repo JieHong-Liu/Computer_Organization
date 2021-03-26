@@ -10,5 +10,13 @@ module Control
     output Ready
 );
 
+always@(posedge clk or posedge Reset)
+begin
+
+
+
+
+end
+
 
 endmodule

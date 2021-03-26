@@ -1,0 +1,209 @@
+# Compile of RF.v was successful.
+# Compile of tb_RF.v was successful.
+# Compile of ALU.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of CompALU.v was successful.
+# Compile of tb_CompALU.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompALU
+# vsim -gui work.tb_CompALU 
+# Start time: 21:05:51 on Mar 12,2021
+# Loading work.tb_CompALU
+# Loading work.CompALU
+# Loading work.RF
+# Loading work.ALU
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompALU/StimuliProcess File: C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v Line: 104
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_CompALU/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 21764
+#           Attempting to use alternate WLF file "./wlfthv2q9k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthv2q9k
+run -all
+# Instr:00100100001000100000000000001001
+# Result:         2, Z:0, C:0
+# Instr:00101000001000100000000000001010
+# Result:         0, Z:1, C:0
+# Instr:01000100001000100000000000010001
+# Result:         1, Z:0, C:0
+# Instr:10000100001000000000001010100001
+# Result:      1024, Z:0, C:0
+# Instr:00100100011011111111111111001001
+# Result:2290649223, Z:0, C:1
+# Instr:00101011000111111010110101001010
+# Result:        26, Z:0, C:1
+# Instr:01000111110111010101001010010001
+# Result:         2, Z:0, C:0
+# Instr:10000111011111110010011111100001
+# Result:         0, Z:1, C:0
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+quit -sim
+# Compile of RF.v was successful.
+# Compile of tb_RF.v was successful.
+# Compile of ALU.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of CompALU.v was successful.
+# Compile of tb_CompALU.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_ALU
+# vsim -gui work.tb_ALU 
+# Start time: 20:49:04 on Mar 13,2021
+# Loading work.tb_ALU
+# Loading work.ALU
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_ALU/StimuliProcess File: C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_ALU.v Line: 101
+add wave -position insertpoint sim:/tb_ALU/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 21764
+#           Attempting to use alternate WLF file "./wlfthrgx65".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthrgx65
+run -all
+# Src1:00000000000000000000000000000000, Src2:00000000000000000000000000000000, Shamt:00000, Funct:001001
+# Result:         0, Z:1, C:0
+# Src1:00000000000000000000000000000000, Src2:11111111111111111111111111111111, Shamt:00000, Funct:001001
+# Result:4294967295, Z:0, C:0
+# Src1:00000000000000000000000000000001, Src2:11111111111111111111111111111111, Shamt:00000, Funct:001001
+# Result:         0, Z:1, C:1
+# Src1:11111111111111111111111111111111, Src2:11111111111111111111111111111111, Shamt:00000, Funct:001001
+# Result:4294967294, Z:0, C:1
+# Src1:00000000000000000000000000000000, Src2:00000000000000000000000000000000, Shamt:00000, Funct:001010
+# Result:         0, Z:1, C:0
+# Src1:00000000000000000000000000000001, Src2:00000000000000000000000000000000, Shamt:00000, Funct:001010
+# Result:         1, Z:0, C:0
+# Src1:11111111111111111111111111111111, Src2:11111111111111111111111111111110, Shamt:00000, Funct:001010
+# Result:         1, Z:0, C:0
+# Src1:11111111111111111111111111111111, Src2:11111111111111111111111111111111, Shamt:00000, Funct:001010
+# Result:         0, Z:1, C:0
+# Src1:00000000000000000000000000000000, Src2:00000000000000000000000000000001, Shamt:00000, Funct:001010
+# Result:4294967295, Z:0, C:1
+# Src1:00000000000000000000000000000000, Src2:11111111111111111111111111111111, Shamt:00000, Funct:001010
+# Result:         1, Z:0, C:1
+# Src1:00000000000000000000000000000000, Src2:00000000000000000000000000000000, Shamt:00000, Funct:010001
+# Result:         0, Z:1, C:0
+# Src1:00000000000000000000000000000000, Src2:11111111111111111111111111111111, Shamt:00000, Funct:010001
+# Result:         0, Z:1, C:0
+# Src1:11111111111111111111111111111111, Src2:00000000000000000000000000000000, Shamt:00000, Funct:010001
+# Result:         0, Z:1, C:0
+# Src1:10101010101010101010101010101010, Src2:01010101010101010101010101010101, Shamt:00000, Funct:010001
+# Result:         0, Z:1, C:0
+# Src1:11111111111111111111111111111111, Src2:11111111111111111111111111111111, Shamt:00000, Funct:010001
+# Result:4294967295, Z:0, C:0
+# Src1:00000000000000000000000000000001, Src2:00000000000000000000000000000000, Shamt:01010, Funct:100001
+# Result:      1024, Z:0, C:0
+# Src1:00000000000000000000000000000001, Src2:00000000000000000000000000000000, Shamt:00001, Funct:100001
+# Result:         2, Z:0, C:0
+# Src1:10000000000000000000000000000000, Src2:00000000000000000000000000000000, Shamt:00001, Funct:100001
+# Result:         0, Z:1, C:1
+# Src1:11111111111111111111111111111111, Src2:00000000000000000000000000000000, Shamt:11111, Funct:100001
+# Result:2147483648, Z:0, C:1
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_ALU.v(114)
+#    Time: 380 ns  Iteration: 1  Instance: /tb_ALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_ALU.v line 114
+quit -sim
+# End time: 20:53:30 on Mar 13,2021, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 7
+vsim -gui work.tb_ALU
+# vsim -gui work.tb_ALU 
+# Start time: 20:54:13 on Mar 13,2021
+# Loading work.tb_ALU
+# Loading work.ALU
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_ALU/StimuliProcess File: C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_ALU.v Line: 101
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 20:54:27 on Mar 13,2021, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 2
+vsim -gui work.tb_CompALU
+# vsim -gui work.tb_CompALU 
+# Start time: 20:54:33 on Mar 13,2021
+# Loading work.tb_CompALU
+# Loading work.CompALU
+# Loading work.RF
+# Loading work.ALU
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompALU/StimuliProcess File: C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v Line: 104
+# WARNING: No extended dataflow license exists
+run -all
+# Instr:00100100001000100000000000001001
+# Result:         2, Z:0, C:0
+# Instr:00101000001000100000000000001010
+# Result:         0, Z:1, C:0
+# Instr:01000100001000100000000000010001
+# Result:         1, Z:0, C:0
+# Instr:10000100001000000000001010100001
+# Result:      1024, Z:0, C:0
+# Instr:00100100011011111111111111001001
+# Result:2290649223, Z:0, C:1
+# Instr:00101011000111111010110101001010
+# Result:        26, Z:0, C:1
+# Instr:01000111110111010101001010010001
+# Result:         2, Z:0, C:0
+# Instr:10000111011111110010011111100001
+# Result:         0, Z:1, C:0
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+add wave -position insertpoint sim:/tb_CompALU/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 21764
+#           Attempting to use alternate WLF file "./wlft9aq9s7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9aq9s7
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+add wave -position insertpoint sim:/tb_CompALU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+quit -sim
+# End time: 20:55:27 on Mar 13,2021, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 4
+vsim -gui work.tb_CompALU
+# vsim -gui work.tb_CompALU 
+# Start time: 20:55:40 on Mar 13,2021
+# Loading work.tb_CompALU
+# Loading work.CompALU
+# Loading work.RF
+# Loading work.ALU
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompALU/StimuliProcess File: C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v Line: 104
+add wave -position insertpoint sim:/tb_CompALU/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 21764
+#           Attempting to use alternate WLF file "./wlftkwcii7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkwcii7
+run -all
+# Instr:00100100001000100000000000001001
+# Result:         2, Z:0, C:0
+# Instr:00101000001000100000000000001010
+# Result:         0, Z:1, C:0
+# Instr:01000100001000100000000000010001
+# Result:         1, Z:0, C:0
+# Instr:10000100001000000000001010100001
+# Result:      1024, Z:0, C:0
+# Instr:00100100011011111111111111001001
+# Result:2290649223, Z:0, C:1
+# Instr:00101011000111111010110101001010
+# Result:        26, Z:0, C:1
+# Instr:01000111110111010101001010010001
+# Result:         2, Z:0, C:0
+# Instr:10000111011111110010011111100001
+# Result:         0, Z:1, C:0
+# ** Note: $stop    : C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v(117)
+#    Time: 160 ns  Iteration: 1  Instance: /tb_CompALU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/HDL/Computer_Organization/HW1/tb_CompALU.v line 117
+# End time: 20:59:55 on Mar 13,2021, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 4

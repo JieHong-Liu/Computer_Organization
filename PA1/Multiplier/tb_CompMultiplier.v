@@ -1,5 +1,5 @@
 /*
- *	Testbench for Homework 1
+ *	Testbench for Project 1 Part 1
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *
@@ -20,68 +20,68 @@
  *	Organizarion) to use.
  *	We (ESSLab) are not responsible for any illegal use.
  *
- *	NOTE	: FOR COMPATIBILITY OF YOUR CODE, PLEASE DONT MODIFY ANY THING
+ *	NOTE	: FOR COMPATIBILITY OF YOUR CODE, PLEASE DONT CHANGE ANY THING
  *			  IN THIS FILE!
  *
  */
-
+ 
 // Setting timescale
 `timescale 10 ns / 1 ns
 
-// Configuration
+// Declarations
 `define DELAY			1	// # * timescale
-`define REGISTER_SIZE	32	// bit width
-`define MAX_REGISTER	32	// index
-`define DATA_FILE		"testbench/RF.dat"
-`define OUTPUT_FILE		"testbench/tb_RF.out"
+`define INPUT_FILE		"testbench/tb_CompMultiplier.in"
+`define OUTPUT_FILE		"testbench/tb_CompMultiplier.out"
 
 // Declaration
 `define LOW		1'b0
 `define HIGH	1'b1
 
-module tb_RF;
+module tb_CompMultiplier;
 
 	// Inputs
-	reg [4:0] Addr1;
-	reg [4:0] Addr2;
+	reg Reset;
+	reg Run;
+	reg [31:0] Multiplicand_in;
+	reg [31:0] Multiplier_in;
 	
 	// Outputs
-	wire [31:0] Src1;
-	wire [31:0] Src2;
+	wire [63:0] Product_out;
+	wire Ready;
 	
 	// Clock
 	reg clk = `LOW;
 	
 	// Testbench variables
-	reg [`REGISTER_SIZE-1:0] register [0:`MAX_REGISTER-1];
+	reg [63:0] read_data;
+	integer input_file;
 	integer output_file;
 	integer i;
 	
 	// Instantiate the Unit Under Test (UUT)
-	RF UUT(
-		// Inputs
-		.Addr1(Addr1),
-		.Addr2(Addr2),
+	CompMultiplier UUT(
 		// Outputs
-		.Src1(Src1),
-		.Src2(Src2)
+		.Product_out(Product_out),
+		.Ready(Ready),
+		// Inputs
+		.Multiplicand_in(Multiplicand_in),
+		.Multiplier_in(Multiplier_in),
+		.Run(Run),
+		.Reset(Reset),
+		.clk(clk)
 	);
 	
 	initial
 	begin : Preprocess
 		// Initialize inputs
-		Addr1 = 32'b0;
-		Addr2 = 32'b0;
+		Reset 			= `LOW;
+		Run 			= `LOW;
+		Multiplicand_in	= 32'd0;
+		Multiplier_in 	= 32'd0;
 
 		// Initialize testbench files
-		$readmemh(`DATA_FILE, register);
-		output_file = $fopen(`OUTPUT_FILE);
-		
-		// Initialize internal register
-		for (i = 0; i < `MAX_REGISTER; i = i + 1)
-		begin
-			UUT.R[i] = register[i];
-		end
+		input_file	= $fopen(`INPUT_FILE, "r");
+		output_file	= $fopen(`OUTPUT_FILE);
 
 		#`DELAY;	// Wait for global reset to finish
 	end
@@ -95,15 +95,21 @@ module tb_RF;
 	always
 	begin : StimuliProcess
 		// Start testing
-		for (i = 0; i < `MAX_REGISTER; i = i + 1)
+		while (!$feof(input_file))
 		begin
-			Addr1 = i[`REGISTER_SIZE-1:0];
-			Addr2 = `REGISTER_SIZE'd`MAX_REGISTER-1 - i[`REGISTER_SIZE-1:0];
-			@(clk);	// Wait clock
-			$display("Addr1:%h, Addr2:%h", Addr1, Addr2);
-			$display("Src1:%h, Src2:%h", Src1, Src1);
-			$fdisplay(output_file, "%t,%h,%h", $time, Src1, Src2);
+			$fscanf(input_file, "%x\n", read_data);
+			@(posedge clk);	// Wait clock
+			{Multiplicand_in, Multiplier_in} = read_data;
+			Reset = `HIGH;
+			@(posedge clk);	// Wait clock
+			Reset = `LOW;
+			@(posedge clk);	// Wait clock
+			Run = `HIGH;
+			@(posedge Ready);	// Wait ready
+			Run = `LOW;
 		end
+		
+		#`DELAY;	// Wait for result stable
 
 		// Close output file for safety
 		$fclose(output_file);
@@ -111,5 +117,12 @@ module tb_RF;
 		// Stop the simulation
 		$stop();
 	end
-
+	
+	always @(posedge Ready)
+	begin : Monitoring
+		$display("Multiplicand:%d, Multiplier:%d", Multiplicand_in, Multiplier_in);
+		$display("result:%d", Product_out);
+		$fdisplay(output_file, "%t,%x", $time, Product_out);
+	end
+	
 endmodule

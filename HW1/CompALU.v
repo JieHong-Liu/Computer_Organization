@@ -23,24 +23,51 @@
  */
 
 /*
- * Declaration of Register File for this project.
- * CAUTION: DONT MODIFY THE NAME.
+ * Declaration of top entry for this project.
+ * CAUTION: DONT MODIFY THE NAME AND I/O DECLARATION.
  */
-module RF(
-    input [4:0]Addr1,
-    input [4:0]Addr2,
-    output [31:0]Src1,
-    output [31:0]Src2
+module CompALU(
+	//	Outputs
+	Result, Zero, Carry,
+	//	Inputs
+	Instr
+);
+// Ports declaration
+input Instr;
+output Result,Zero, Carry;
+
+// Type declaration
+
+wire [31:0] Instr;
+wire [31:0] Result;
+wire [31:0] inner_Src1;
+wire [31:0] inner_Src2;
+/* 
+* Declaration of Register File.
+* CAUTION: DONT MODIFY THE NAME.
+*/
+RF Register_File(
+    //Inputs
+    .Addr1(Instr[25:21]),
+    .Addr2(Instr[20:16]),
+    //Outputs
+    .Src1(inner_Src1),
+    .Src2(inner_Src2)
 );
 
-	/* 
-	 * Declaration of inner register.
-	 * CAUTION: DONT MODIFY THE NAME AND SIZE.
-	 */
-	reg [31:0]R[0:31];
+ALU Arithemetic_Logical_Unit(
+    //Inputs
+    .Src1(inner_Src1),
+    .Src2(inner_Src2),
+    .Shamt(Instr[10:6]),
+    .Funct(Instr[5:0]),
+    .Zero(Zero),
+    .Carry(Carry),
+    //Outputs
+    .Result(Result)
+);
 
-    // Reg MUXs
-    assign Src1 = R[Addr1];
-    assign Src2 = R[Addr2];
-    
+
 endmodule
+
+
