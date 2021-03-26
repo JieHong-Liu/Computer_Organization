@@ -7,8 +7,8 @@ output reg Carry;
 
 always@(Src1 or Src2 or Funct)
 begin
-    case (Funct[5:0])
-    6'd0: {Carry,Result} = Src1 + Src2;
+    case (Funct)
+    6'd1: {Carry,Result} = Src1 + Src2;
     default: // 全部都沒變
     begin
         Carry = Carry;

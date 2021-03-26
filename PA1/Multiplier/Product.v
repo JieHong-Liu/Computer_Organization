@@ -7,13 +7,18 @@ input clk;
 input ALU_carry;
 input [31:0]ALU_Result;
 input [31:0]Multiplier_in;
-output [63:0]Product_out;
-
-always@(Multiplier_in)
+output reg[63:0]Product_out;
+always@(W_ctrl or SRL_ctrl)
 begin
-    if(Product_out[0] == 1)
+    if(W_ctrl == 1)
     begin
-        Product_out[63:32] += Multiplicand_out;
+        Product_out[31:0] = Multiplier_in[31:0];
     end
+    if(SRL_ctrl == 1) // 代表LSB == 1
+    begin
+        Product_out[63:32] = ALU_Result[31:0];        
+    end
+    Product_out = Product_out >> 1;
+
 end
 endmodule
