@@ -14,9 +14,49 @@ wire SRL_ctrl,Ready,Reset,ALU_carry;
 wire [31:0]ALU_Result;
 wire [31:0]Multiplier_in;
 wire [63:0]Product_out;
-Multiplicand A(Reset,W_ctrl,Multiplicand_in[31:0],Multiplicand_out[31:0]);// 被乘數
-ALU Arithemetic_Logical_Unit(Product_out[63:32], Multiplicand[31:0],ALU_result[31:0],ALU_carry,ADDU_ctrl[5:0]);
-Product P(SRL_ctrl,W_ctrl,Ready,Reset,clk,ALU_carry,ALU_Result,Multiplier_in[31:0],Product_out[63:0]);
-Control C(Run,Reset,clk,Product_out[0],W_ctrl,ADDU_ctrl,SRL_ctrl,Ready);
+
+// control unit
+Control controller
+(
+    .Run(Run),
+    .Reset(Reset),
+    .clk(clk),
+    .LSB(Product_out[0]),
+    .W_ctrl(W_ctrl),
+    .ADDU_ctrl(ADDU_ctrl),
+    .SRL_ctrl(SRL_ctrl),
+    .Ready(Ready)
+);
+// 被乘數
+Multiplicand multiplicand 
+(
+    .Reset(Reset),
+    .W_ctrl(W_ctrl),
+    .Multiplicand_in(Multiplicand_in[31:0]),
+    .Multiplicand_out(Multiplicand_out[31:0])
+);
+// ALU
+ALU Arithemetic_Logical_Unit
+(
+    .Src1(Product_out[63:32]),
+    .Src2(Multiplicand_out[31:0]),
+    .Funct(ADDU_ctrl[5:0]),
+    .Carry(ALU_carry),
+    .Result(ALU_Result[31:0])
+);
+// product unit
+
+Product product_unit
+(
+    .SRL_ctrl(SRL_ctrl),
+    .W_ctrl(W_ctrl),
+    .Ready(Ready),
+    .Reset(Reset),
+    .clk(clk),
+    .ALU_carry(ALU_carry),
+    .ALU_result(ALU_result),
+    .Multiplier_in(Multiplier_in[31:0]),
+    .Product_out(Product_out[63:0])
+);
 
 endmodule

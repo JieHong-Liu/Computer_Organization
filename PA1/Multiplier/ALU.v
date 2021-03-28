@@ -7,6 +7,7 @@ output reg Carry;
 
 always@(Src1 or Src2 or Funct)
 begin
+    //  I use case to implement ALU, because ALU usually do a lot of jobs.
     case (Funct)
     6'd1: {Carry,Result} = Src1 + Src2;
     default: // 全部都沒變
@@ -16,5 +17,5 @@ begin
     end
     endcase
 end
-
+    
 endmodule
