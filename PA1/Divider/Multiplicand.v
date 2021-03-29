@@ -5,7 +5,7 @@ input [31:0]Multiplicand_in;
 reg [31:0]Multiplicand_reg;
 output reg [31:0]Multiplicand_out;
 
-always@(Reset or W_ctrl or Multiplicand_in)
+always@(Reset or W_ctrl)
 begin
     if(Reset == 1 && W_ctrl == 1)
         begin

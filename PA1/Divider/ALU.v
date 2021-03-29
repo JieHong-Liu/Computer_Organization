@@ -8,12 +8,12 @@ output reg Carry;
 always@(Src1 or Src2 or Funct)
 begin
     //  I use case to implement ALU, because ALU usually do a lot of jobs.
-    case (Funct[5:0])
-    6'b011001: {Carry,Result} = Src1 + Src2;
-    default: // 如果今天LSB==0->不用加的話，就不要加。
+    case (Funct)
+    6'd1: {Carry,Result} = Src1 + Src2;
+    default: // 全部都沒變
     begin
-        Carry = 0;
-        Result = 0;
+        Carry = Carry;
+        Result = Result;
     end
     endcase
 end

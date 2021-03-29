@@ -1,0 +1,165 @@
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# vsim -gui work.tb_Control 
+# Start time: 17:02:22 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# End time: 17:04:55 on Mar 29,2021, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_Control 
+# Start time: 17:04:55 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# End time: 17:09:33 on Mar 29,2021, Elapsed time: 0:04:38
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_Control 
+# Start time: 17:09:33 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# End time: 17:13:06 on Mar 29,2021, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_Control 
+# Start time: 17:13:06 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+vsim -gui work.tb_Control
+# End time: 17:22:12 on Mar 29,2021, Elapsed time: 0:09:06
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_Control 
+# Start time: 17:22:12 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# End time: 17:22:48 on Mar 29,2021, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_Control 
+# Start time: 17:22:48 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.tb_Control
+# End time: 17:25:00 on Mar 29,2021, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_Control 
+# Start time: 17:25:00 on Mar 29,2021
+# Loading work.tb_Control
+# Loading work.Control
+add wave -position insertpoint sim:/tb_Control/*
+run -all
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
+#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
+# 1
+# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
+# End time: 17:29:12 on Mar 29,2021, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 1

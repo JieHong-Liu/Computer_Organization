@@ -1,4 +1,4 @@
-module CompMultiplier(clk,Reset,Run,Multiplier_in,Multiplicand_in,Product_out,Ready);
+module CompMultiplier(clk,Reset,Run,Multiplier_in,Multiplicand_in,Product_out);
 input clk;
 input Reset;
 input Run;
@@ -14,7 +14,6 @@ wire SRL_ctrl,Ready,Reset,ALU_carry;
 wire [31:0]ALU_Result;
 wire [31:0]Multiplier_in;
 wire [63:0]Product_out;
-wire [5:0]ADDU_ctrl;
 
 // control unit
 Control controller
@@ -24,11 +23,10 @@ Control controller
     .clk(clk),
     .LSB(Product_out[0]),
     .W_ctrl(W_ctrl),
-    .ADDU_ctrl(ADDU_ctrl[5:0]),
+    .ADDU_ctrl(ADDU_ctrl),
     .SRL_ctrl(SRL_ctrl),
     .Ready(Ready)
 );
-
 // 被乘數
 Multiplicand multiplicand 
 (
@@ -37,7 +35,6 @@ Multiplicand multiplicand
     .Multiplicand_in(Multiplicand_in[31:0]),
     .Multiplicand_out(Multiplicand_out[31:0])
 );
-
 // ALU
 ALU Arithemetic_Logical_Unit
 (
@@ -47,8 +44,8 @@ ALU Arithemetic_Logical_Unit
     .Carry(ALU_carry),
     .Result(ALU_Result[31:0])
 );
-
 // product unit
+
 Product product_unit
 (
     .SRL_ctrl(SRL_ctrl),
