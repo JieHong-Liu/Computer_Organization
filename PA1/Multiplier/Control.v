@@ -8,7 +8,7 @@ output reg [5:0]ADDU_ctrl;
 output reg SRL_ctrl;
 output reg Ready;
 reg [5:0]counter; // counter for 32 times;
-always@(posedge clk)
+always@(posedge clk or  posedge Reset)
 begin
     if(Reset == 1)
         begin

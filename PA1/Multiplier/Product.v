@@ -1,4 +1,4 @@
-module Product(SRL_ctrl,W_ctrl,Ready,Reset,clk,ALU_carry,ALU_Result,Multiplier_in,Product_out);
+module Product(SRL_ctrl,W_ctrl,Ready,Reset,clk,ALU_carry,ALU_result,Multiplier_in,Product_out);
 
 input SRL_ctrl;
 input W_ctrl;
@@ -6,7 +6,7 @@ input Ready;
 input Reset;
 input clk;
 input ALU_carry;
-input [31:0]ALU_Result;
+input [31:0]ALU_result;
 input [31:0]Multiplier_in;
 output reg[63:0]Product_out;
 
@@ -25,7 +25,7 @@ begin
                 end
             else // ALU_Carry != 1
                 begin
-                    Product_out[63:32] = Product_out[63:32] + ALU_Result[31:0];
+                    Product_out[63:32] = Product_out[63:32] + ALU_result[31:0];
                     Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
                 end
     
@@ -34,5 +34,6 @@ begin
         begin
             Product_out = Product_out ;
         end
+    else;
 end
 endmodule

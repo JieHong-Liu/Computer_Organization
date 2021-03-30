@@ -7,159 +7,99 @@
 # Compile of tb_ALU.v was successful.
 # Compile of tb_Multiplicand.v was successful.
 # Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# vsim -gui work.tb_Control 
-# Start time: 17:02:22 on Mar 29,2021
-# Loading work.tb_Control
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:04:52 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
 # Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+# ** Error: (vsim-3063) Port 'ALU_result' not found in the connected module (7th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompMultiplier/UUT/product_unit File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v Line: 52
+# Error loading design
+# End time: 21:04:53 on Mar 30,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v failed with 1 errors.
+# 10 compiles, 1 failed with 1 error.
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:06:43 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+# ** Error: (vsim-3063) Port 'ALU_result' not found in the connected module (7th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompMultiplier/UUT/product_unit File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v Line: 52
+# Error loading design
+# End time: 21:06:44 on Mar 30,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:08:38 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+add wave -position insertpoint sim:/tb_CompMultiplier/*
 run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# End time: 17:04:55 on Mar 29,2021, Elapsed time: 0:02:33
-# Errors: 0, Warnings: 4
-# vsim -gui work.tb_Control 
-# Start time: 17:04:55 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# End time: 17:09:33 on Mar 29,2021, Elapsed time: 0:04:38
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb_Control 
-# Start time: 17:09:33 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# End time: 17:13:06 on Mar 29,2021, Elapsed time: 0:03:33
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb_Control 
-# Start time: 17:13:06 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-vsim -gui work.tb_Control
-# End time: 17:22:12 on Mar 29,2021, Elapsed time: 0:09:06
-# Errors: 0, Warnings: 1
-# vsim -gui work.tb_Control 
-# Start time: 17:22:12 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# End time: 17:22:48 on Mar 29,2021, Elapsed time: 0:00:36
-# Errors: 0, Warnings: 3
-# vsim -gui work.tb_Control 
-# Start time: 17:22:48 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# Compile of ALU.v was successful.
-# Compile of CompMultiplier.v was successful.
-# Compile of Control.v was successful.
-# Compile of Multiplicand.v was successful.
-# Compile of Product.v was successful.
-# Compile of tb_CompMultiplier.v was successful.
-# Compile of tb_ALU.v was successful.
-# Compile of tb_Multiplicand.v was successful.
-# Compile of tb_Control.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim -gui work.tb_Control
-# End time: 17:25:00 on Mar 29,2021, Elapsed time: 0:02:12
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb_Control 
-# Start time: 17:25:00 on Mar 29,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v(18)
-#    Time: 350 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v line 18
-# End time: 17:29:12 on Mar 29,2021, Elapsed time: 0:04:12
-# Errors: 0, Warnings: 1
+# Multiplicand:      1003, Multiplier:        20
+# result:               24060
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(118)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 118
