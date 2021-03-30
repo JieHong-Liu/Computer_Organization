@@ -25,7 +25,8 @@ begin
                 end
             else // ALU_Carry != 1
                 begin
-                    Product_out[63:32] = Product_out[63:32] + ALU_result[31:0];
+                    if(Product_out[0] == 1)
+                        Product_out[63:32] =  ALU_result[31:0];
                     Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
                 end
     

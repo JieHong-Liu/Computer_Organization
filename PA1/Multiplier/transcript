@@ -103,3 +103,273 @@ run -all
 # ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(118)
 #    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
 # Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 118
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 21:35:28 on Mar 30,2021, Elapsed time: 0:26:50
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:35:28 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:      1003, Multiplier:        20
+# result:               24060
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(118)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 118
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 21:36:16 on Mar 30,2021, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:36:16 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:      1003, Multiplier:        20
+# result:                   X
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(118)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 118
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 21:37:07 on Mar 30,2021, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 21:37:07 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 100
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:      1003, Multiplier:        20
+# result:               24060
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(118)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 118
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 23:10:01 on Mar 30,2021, Elapsed time: 1:32:54
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 23:10:01 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 101
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'ALU_result'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompMultiplier/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 62
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:        10, Multiplier:         1
+# result:                  10
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(119)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 119
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 23:17:53 on Mar 30,2021, Elapsed time: 0:07:52
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 23:17:53 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 101
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'ALU_result'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompMultiplier/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 62
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:        10, Multiplier:        10
+# result:                 116
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(119)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 119
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 23:29:22 on Mar 30,2021, Elapsed time: 0:11:29
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 23:29:22 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 101
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:        10, Multiplier:        10
+# result:                 116
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(119)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 119
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 23:57:52 on Mar 30,2021, Elapsed time: 0:28:30
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 23:57:52 on Mar 30,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 101
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:        10, Multiplier:        10
+# result:                 100
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(119)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 119
+# Compile of ALU.v was successful.
+# Compile of CompMultiplier.v was successful.
+# Compile of Control.v was successful.
+# Compile of Multiplicand.v was successful.
+# Compile of Product.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Multiplicand.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Product.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompMultiplier
+# End time: 00:01:55 on Mar 31,2021, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_CompMultiplier 
+# Start time: 00:01:55 on Mar 31,2021
+# Loading work.tb_CompMultiplier
+# Loading work.CompMultiplier
+# Loading work.Control
+# Loading work.Multiplicand
+# Loading work.ALU
+# Loading work.Product
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompMultiplier/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v Line: 101
+add wave -position insertpoint sim:/tb_CompMultiplier/*
+run -all
+# Multiplicand:        10, Multiplier:        10
+# result:                 100
+# Multiplicand:      1003, Multiplier:        20
+# result:               20060
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v(119)
+#    Time: 1440 ns  Iteration: 0  Instance: /tb_CompMultiplier
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v line 119
+# End time: 00:10:59 on Mar 31,2021, Elapsed time: 0:09:04
+# Errors: 0, Warnings: 2

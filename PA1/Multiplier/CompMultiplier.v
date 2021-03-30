@@ -1,4 +1,4 @@
-module CompMultiplier(clk,Reset,Run,Multiplier_in,Multiplicand_in,Product_out,Ready);
+module CompMultiplier(clk,Reset,Run,Multiplier_in,Multiplicand_in,Product_out,Ready,ALU_result);
 input clk;
 input Reset;
 input Run;
@@ -11,11 +11,10 @@ wire W_ctrl;
 wire [31:0]Multiplicand_out;
 // for Product
 wire SRL_ctrl,Ready,Reset,ALU_carry;
-wire [31:0]ALU_result;
+output [31:0]ALU_result;
 wire [31:0]Multiplier_in;
 wire [63:0]Product_out;
 wire [5:0]ADDU_ctrl;
-
 // control unit
 Control controller
 (

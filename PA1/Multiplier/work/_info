@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/intelFPGA_pro/20.3
 vALU
-Z0 !s110 1617109707
+Z0 !s110 1617120079
 !i10b 1
-!s100 CEG?B]?FCjbZN:o^1eID<1
+!s100 RlC[MHcC^la0DleBNUcJz0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IJ=SVZQ8Bm[882?>0bARle0
+I<5cWQN<LUVZZ7MNEMLTaP0
 Z2 dC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier
-w1617004362
+w1617119787
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v
-!i122 465
+!i122 555
 L0 1 21
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 OV;L;2020.3;71
 r1
 !s85 0
 31
-Z5 !s108 1617109707.000000
+Z5 !s108 1617120079.000000
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v|
 !i113 1
@@ -36,15 +36,15 @@ n@a@l@u
 vCompMultiplier
 R0
 !i10b 1
-!s100 501Y0RSACV:9>54m0QKN[2
+!s100 Z_5Pb5K8:O@i8XgkRF7Vl2
 R1
-I7:TV]HVDD9AL^:OSNMMa;0
+If0[j_853mJfjldBk5L0YF2
 R2
-w1617109539
+w1617116948
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v
-!i122 466
-L0 1 65
+!i122 556
+L0 1 64
 R3
 R4
 r1
@@ -67,7 +67,7 @@ R2
 w1617105625
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Control.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Control.v
-!i122 467
+!i122 557
 L0 1 53
 R3
 R4
@@ -91,7 +91,7 @@ R2
 w1617005794
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Multiplicand.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Multiplicand.v
-!i122 468
+!i122 558
 L0 1 27
 R3
 R4
@@ -108,15 +108,15 @@ n@multiplicand
 vProduct
 R0
 !i10b 1
-!s100 Az3BbNN]o2cKF;NL8eKKG0
+!s100 VY`TcRgJL1;fnkJl6e5:23
 R1
-I:V0fPkgHFDXR^JjY;?cJ`3
+INg>@D1KJj=G7GhbmP1?D72
 R2
-w1617109701
+w1617119822
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Product.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Product.v
-!i122 469
-Z8 L0 1 39
+!i122 559
+L0 1 40
 R3
 R4
 r1
@@ -130,7 +130,7 @@ R6
 R7
 n@product
 vtb_ALU
-Z9 !s110 1617109708
+Z8 !s110 1617120080
 !i10b 1
 !s100 HgA>4lB6P;=AfDbChN[X41
 R1
@@ -139,14 +139,14 @@ R2
 w1617004773
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v
-!i122 471
+!i122 561
 L0 1 30
 R3
 R4
 r1
 !s85 0
 31
-Z10 !s108 1617109708.000000
+Z9 !s108 1617120080.000000
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v|
 !i113 1
@@ -154,23 +154,23 @@ R6
 R7
 ntb_@a@l@u
 vtb_CompMultiplier
-R9
+R0
 !i10b 1
-!s100 6C][I@`>@>h`<NOELUCH82
+!s100 <GD1n2`V<z:aSML5iM3zY1
 R1
-I0N9ml5jUK[N6D?oRbEY@C2
+I3cDYY@^R`[Ch<C96dfQQi0
 R2
-w1617105363
+w1617117903
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v
-!i122 470
-L0 40 89
+!i122 560
+L0 40 90
 R3
 R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v|
 !i113 1
@@ -178,7 +178,7 @@ R6
 R7
 ntb_@comp@multiplier
 vtb_Control
-R9
+R8
 !i10b 1
 !s100 ndVP;F`P:ZR@TRgd`7AEh1
 R1
@@ -187,14 +187,14 @@ R2
 w1617009885
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v
-!i122 473
+!i122 563
 L0 1 44
 R3
 R4
 r1
 !s85 0
 31
-R10
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v|
 !i113 1
@@ -202,7 +202,7 @@ R6
 R7
 ntb_@control
 vtb_Multiplicand
-R9
+R8
 !i10b 1
 !s100 >[;lO4Lno[B;AK4m_`WSN3
 R1
@@ -211,14 +211,14 @@ R2
 w1617006530
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v
-!i122 472
-R8
+!i122 562
+L0 1 39
 R3
 R4
 r1
 !s85 0
 31
-R10
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v|
 !i113 1
@@ -226,7 +226,7 @@ R6
 R7
 ntb_@multiplicand
 vtb_Product
-R9
+R8
 !i10b 1
 !s100 i1c]4diX@h=8PdGEVnSOI0
 R1
@@ -235,14 +235,14 @@ R2
 w1617109555
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Product.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Product.v
-!i122 474
+!i122 564
 L0 1 68
 R3
 R4
 r1
 !s85 0
 31
-R10
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Product.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Product.v|
 !i113 1

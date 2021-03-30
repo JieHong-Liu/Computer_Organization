@@ -116,7 +116,7 @@ module tb_CompMultiplier;
 		$fclose(output_file);
 
 		// Stop the simulation
-			$stop();
+		$stop();
 	end
 	
 	always @(posedge Ready)
