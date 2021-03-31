@@ -30,7 +30,7 @@ begin
                     SRL_ctrl = 1;   // 將結果暫存器左半累加被乘數
                     if (LSB == 1)   // Product[0] == 1 -> ALU要工作，所以我讓ADDU_ctrl = 1;
                         begin
-                            ADDU_ctrl = 6'b011001;  // 並開始執行運算。 
+                            ADDU_ctrl = 6'b001001;  // 並開始執行運算。 
                         end
                     else if (LSB == 0)  // ALU不用工作
                         begin

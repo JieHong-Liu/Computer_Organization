@@ -1,11 +1,11 @@
-module Multiplicand(Reset,W_ctrl,Multiplicand_in,Multiplicand_out);
+module Divisor(Reset,W_ctrl,Multiplicand_in,Multiplicand_out);
 input Reset;
 input W_ctrl;
 input [31:0]Multiplicand_in;
 reg [31:0]Multiplicand_reg;
 output reg [31:0]Multiplicand_out;
 
-always@(Reset or W_ctrl)
+always@(Reset or W_ctrl or Multiplicand_in)
 begin
     if(Reset == 1 && W_ctrl == 1)
         begin

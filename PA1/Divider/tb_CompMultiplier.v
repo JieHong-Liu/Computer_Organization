@@ -48,7 +48,7 @@ module tb_CompMultiplier;
 	// Outputs
 	wire [63:0] Product_out;
 	wire Ready;
-	
+	wire [31:0] ALU_result;
 	// Clock
 	reg clk = `LOW;
 	
@@ -68,7 +68,8 @@ module tb_CompMultiplier;
 		.Multiplier_in(Multiplier_in),
 		.Run(Run),
 		.Reset(Reset),
-		.clk(clk)
+		.clk(clk),
+		.ALU_result(ALU_result)
 	);
 	
 	initial
@@ -115,7 +116,7 @@ module tb_CompMultiplier;
 		$fclose(output_file);
 
 		// Stop the simulation
-		$stop();
+			$stop();
 	end
 	
 	always @(posedge Ready)

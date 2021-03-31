@@ -15,6 +15,7 @@ ALU Arithemetic_Logical_Unit(
     .Result(Result),
     .Carry(Carry)
 );
+
 initial #20 $finish;
 initial fork
 #0 Funct = 6'b 001001; // MIPS規定的乘法function code
