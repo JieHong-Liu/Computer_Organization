@@ -19,17 +19,12 @@ begin
         end
     else if(SRL_ctrl == 1 && Ready == 0) 
         begin
-            if(ALU_carry == 1)
-                begin
-                    Product_out = 64'bZ;// it means that the output is overflow and the ans must be wrong
-                end
-            else // ALU_Carry != 1
-                begin
-                    if(Product_out[0] == 1)
-                        Product_out[63:32] =  ALU_result[31:0];
-                    Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
-                end
-    
+                if(Product_out[0] == 1) // means that LSB = 1;
+                    begin
+                        Product_out[63:32] =  ALU_result[31:0]; // 才要把Result放進Product_out               
+                    end
+                Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
+                Product_out[63] = ALU_carry;// shift 完以後把carry放到第63個bit
         end
     else if(Ready == 1)
         begin

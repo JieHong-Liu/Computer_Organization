@@ -49,9 +49,9 @@ initial fork
     // 系統開始執行
     #30 Reset = 0;
     #30 SRL_ctrl = 1;
-    #30 ALU_carry = 1; // 這裡的話輸出應該會是高阻抗，因為overflow了
+    #30 ALU_carry = 1; // 這裡的話輸出的MSB應該會是1
     
-    #40 ALU_carry = 0; // 到這裡才會恢復正常(負緣觸發)
+    #40 ALU_carry = 0; // 到這裡MSB應該要是0
     #40 Reset = 1; // 因為要把Product_out歸0，所以要重新Reset
     #40 W_ctrl = 1;
     
