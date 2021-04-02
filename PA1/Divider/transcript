@@ -1,0 +1,46 @@
+# Load canceled
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_CompMultiplier.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# 9 compiles, 1 failed with no errors.
+# ** Error: ¦¨³©¡
+#        Unable to replace existing ini file (C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divider.mpf).  File can not be renamed.
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# Compile of tb_CompDivider.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# Compile of tb_CompDivider.v was successful.
+# 10 compiles, 0 failed with no errors.

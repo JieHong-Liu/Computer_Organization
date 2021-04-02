@@ -59,7 +59,7 @@ module tb_CompMultiplier;
 	integer i;
 	
 	// Instantiate the Unit Under Test (UUT)
-	CompMultiplier UUT(
+	CompDivider UUT(
 		// Outputs
 		.Product_out(Product_out),
 		.Ready(Ready),
