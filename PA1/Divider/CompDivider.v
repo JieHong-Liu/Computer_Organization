@@ -1,4 +1,4 @@
-module CompDivider(clk,Reset,Run,Divisor_in,Dividend_in,Remainder_out,Ready,ALU_result);
+module CompDivider(clk,Reset,Run,Divisor_in,Dividend_in,Remainder_out,Quotient_out,Ready,ALU_result);
 input clk;
 input Reset;
 input Run;
@@ -10,12 +10,10 @@ output [31:0]Quotient_out;
 output Ready;
 // Divisor
 wire W_ctrl;
-wire [31:0]Divisor_in;
 wire [31:0]Divisor_out;
 // for Remainder
 wire SRL_ctrl,Ready,Reset,ALU_carry;
 output [31:0]ALU_result;
-wire [31:0]Multiplier_in;
 wire [5:0]SUBU_ctrl;
 // control unit
 Control controller
@@ -23,7 +21,7 @@ Control controller
     .Run(Run),
     .Reset(Reset),
     .clk(clk),
-    .MSB(Product_out[0]),
+    .MSB(Remainder_out_reg[0]),
     .W_ctrl(W_ctrl),
     .SUBU_ctrl(SUBU_ctrl[5:0]),
     .SRL_ctrl(SRL_ctrl),
@@ -42,7 +40,7 @@ Divisor divisor
 // ALU
 ALU Arithemetic_Logical_Unit
 (
-    .Src1(Remainder_out[31:0]),
+    .Src1(Remainder_out_reg[63:32]),
     .Src2(Divisor_out[31:0]),
     .Funct(SUBU_ctrl[5:0]),
     .Carry(ALU_carry),
