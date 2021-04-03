@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,243 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_pro/20.3
+vALU
+!s110 1617198587
+!i10b 1
+!s100 Anl]7IQ8PUTcH3iX4;_Mc0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^jTJD^fgzCmcgU1e?;9V03
+Z1 dC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider
+w1617196147
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/ALU.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/ALU.v
+!i122 29
+L0 1 22
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OV;L;2020.3;71
+r1
+!s85 0
+31
+Z4 !s108 1617198587.000000
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/ALU.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@l@u
+vCompDivider
+Z7 !s110 1617198588
+!i10b 1
+!s100 AA9ibfB:KVJ[c@Clna;771
+R0
+IHl_n?cBnlJMm`ciDF3ee:0
+R1
+Z8 w1617194970
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/CompDivider.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/CompDivider.v
+!i122 30
+L0 1 64
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/CompDivider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/CompDivider.v|
+!i113 1
+R5
+R6
+n@comp@divider
+vControl
+R7
+!i10b 1
+!s100 4DOO[:KDKlAf88V5K1ol?0
+R0
+IFZjkT]^e8cGe^X6YjjVoQ1
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v
+!i122 31
+L0 1 53
+R2
+R3
+r1
+!s85 0
+31
+Z9 !s108 1617198588.000000
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v|
+!i113 1
+R5
+R6
+n@control
+vDivisor
+R7
+!i10b 1
+!s100 b4WA`?[CLW^^znLgS6i:80
+R0
+IKIaQ<8DS7BWXC5BMo6=j<3
+R1
+w1617198503
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v
+!i122 32
+L0 1 27
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v|
+!i113 1
+R5
+R6
+n@divisor
+vProduct
+R7
+!i10b 1
+!s100 C5G4?<YdUzTE]5`g0W>fa0
+R0
+I]foDVA`khGTPj^E]blKSk3
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v
+!i122 33
+L0 1 35
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v|
+!i113 1
+R5
+R6
+n@product
+vtb_ALU
+R7
+!i10b 1
+!s100 jeWEh2RiCc2bBDoE@^OmS0
+R0
+IiOMB?Q4UF8AURO9P9o12O2
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v
+!i122 34
+L0 1 31
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v|
+!i113 1
+R5
+R6
+ntb_@a@l@u
+vtb_CompMultiplier
+Z10 !s110 1617198589
+!i10b 1
+!s100 <`IeH@@kT:z]`L49l6N2P3
+R0
+IX5aJX`3?_SoRDi>;IeL=O2
+R1
+w1617198156
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v
+!i122 38
+L0 40 90
+R2
+R3
+r1
+!s85 0
+31
+Z11 !s108 1617198589.000000
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v|
+!i113 1
+R5
+R6
+ntb_@comp@multiplier
+vtb_Control
+R7
+!i10b 1
+!s100 ndVP;F`P:ZR@TRgd`7AEh1
+R0
+IST`2Hl2SIV`El`:5Hz5;g0
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v
+!i122 35
+L0 1 44
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v|
+!i113 1
+R5
+R6
+ntb_@control
+vtb_Multiplicand
+R7
+!i10b 1
+!s100 >[;lO4Lno[B;AK4m_`WSN3
+R0
+Iz8]4G031H2O]YF4QBHHmc2
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v
+!i122 36
+L0 1 39
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v|
+!i113 1
+R5
+R6
+ntb_@multiplicand
+vtb_Remainder
+R10
+!i10b 1
+!s100 LT@=zcjA_=N?^bHLB39`l1
+R0
+IVWEUJoU1LRA7:KhD3cEdW3
+R1
+R8
+8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v
+FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v
+!i122 37
+L0 1 68
+R2
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v|
+!i113 1
+R5
+R6
+ntb_@remainder

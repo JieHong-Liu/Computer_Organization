@@ -1,64 +1,70 @@
-module CompDivider(clk,Reset,Run,Multiplier_in,Multiplicand_in,Product_out,Ready,ALU_result);
+module CompDivider(clk,Reset,Run,Divisor_in,Dividend_in,Remainder_out,Ready,ALU_result);
 input clk;
 input Reset;
 input Run;
-input [31:0] Multiplier_in;
-input [31:0] Multiplicand_in;
-output [63:0]Product_out;
+input [31:0] Divisor_in;
+input [31:0] Dividend_in;
+output [63:0]Remainder_out_reg;
+output [31:0]Remainder_out;
+output [31:0]Quotient_out;
 output Ready;
-// Multiplicand
+// Divisor
 wire W_ctrl;
-wire [31:0]Multiplicand_out;
-// for Product
+wire [31:0]Divisor_in;
+wire [31:0]Divisor_out;
+// for Remainder
 wire SRL_ctrl,Ready,Reset,ALU_carry;
 output [31:0]ALU_result;
 wire [31:0]Multiplier_in;
-wire [63:0]Product_out;
-wire [5:0]ADDU_ctrl;
+wire [5:0]SUBU_ctrl;
 // control unit
 Control controller
 (
     .Run(Run),
     .Reset(Reset),
     .clk(clk),
-    .LSB(Product_out[0]),
+    .MSB(Product_out[0]),
     .W_ctrl(W_ctrl),
-    .ADDU_ctrl(ADDU_ctrl[5:0]),
+    .SUBU_ctrl(SUBU_ctrl[5:0]),
     .SRL_ctrl(SRL_ctrl),
     .Ready(Ready)
 );
 
-// 被乘數
-Multiplicand multiplicand 
+// 被除數
+Divisor divisor 
 (
     .Reset(Reset),
     .W_ctrl(W_ctrl),
-    .Multiplicand_in(Multiplicand_in[31:0]),
-    .Multiplicand_out(Multiplicand_out[31:0])
+    .Divisor_in(Divisor_in[31:0]),
+    .Divisor_out(Divisor_out[31:0])
 );
 
 // ALU
 ALU Arithemetic_Logical_Unit
 (
-    .Src1(Product_out[63:32]),
-    .Src2(Multiplicand_out[31:0]),
-    .Funct(ADDU_ctrl[5:0]),
+    .Src1(Remainder_out[31:0]),
+    .Src2(Divisor_out[31:0]),
+    .Funct(SUBU_ctrl[5:0]),
     .Carry(ALU_carry),
     .Result(ALU_result[31:0])
 );
 
-// product unit
-Product product_unit
+// remain unit
+Remainder remain_unit
 (
     .SRL_ctrl(SRL_ctrl),
+    .SLL_ctrl(SLL_ctrl),
     .W_ctrl(W_ctrl),
     .Ready(Ready),
     .Reset(Reset),
     .clk(clk),
     .ALU_carry(ALU_carry),
     .ALU_result(ALU_result[31:0]),
-    .Multiplier_in(Multiplier_in[31:0]),
-    .Product_out(Product_out[63:0])
+    .Dividend_in(Dividend_in[31:0]),
+    .Remainder_out(Remainder_out_reg[63:0])
 );
+
+assign Remainder_out[31:0] = Remainder_out_reg[63:32];
+assign Quotient_out[31:0] = Remainder_out_reg[31:0];
 
 endmodule
