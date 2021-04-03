@@ -1,25 +1,27 @@
 module tb_Remainder();
 reg SRL_ctrl;
+reg SLL_ctrl;
 reg W_ctrl;
 reg Ready;
 reg Reset;
 reg clk;
 reg ALU_carry;
 reg [31:0]ALU_result;
-reg [31:0]Multiplier_in;
-wire [63:0]Product_out;
+reg [31:0]Dividend_in;
+wire [63:0]Remainder_out;
 
 Remainder remain
 (
     .SRL_ctrl(SRL_ctrl),
+    .SLL_ctrl(SLL_ctrl),
     .W_ctrl(W_ctrl),
     .Ready(Ready),
     .Reset(Reset),
     .clk(clk),
     .ALU_carry(ALU_carry),
     .ALU_result(ALU_result),
-    .Multiplier_in(Multiplier_in),
-    .Product_out(Product_out)
+    .Dividend_in(Dividend_in),
+    .Remainder_out(Remainder_out)
 );
 
 initial #100 $finish;
@@ -38,14 +40,15 @@ initial fork
     #0 Reset = 0;
     #0 Ready = 0;
     #0 SRL_ctrl = 0;
+    #0 SLL_ctrl = 0;
     #0 ALU_carry = 0;
-    #0 Multiplier_in = 0;
- 
-    // 系統開始初始化，product_out[31:0] = Multipler_in[31:0]
+    #0 Dividend_in = 0;
+
+    // 系統開始初始化，remainder_out[31:0] = Dividend_in [31:0] << 1
     #15 Reset = 1;
     #15 W_ctrl =1;
-    #15 Multiplier_in = 32'h FFFF_FFFF;
-
+    #15 Dividend_in = 32'h FFFF_FFFF;
+    #15 SLL_ctrl = 1; // start to run
     // 系統開始執行
     #30 Reset = 0;
     #30 SRL_ctrl = 1;

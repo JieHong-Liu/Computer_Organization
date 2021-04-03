@@ -1,5 +1,5 @@
 /*
- *	Testbench for Project 1 Part 1
+ *	Testbench for Project 1 Part 2
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *
@@ -30,25 +30,26 @@
 
 // Declarations
 `define DELAY			1	// # * timescale
-`define INPUT_FILE		"testbench/tb_CompMultiplier.in"
-`define OUTPUT_FILE		"testbench/tb_CompMultiplier.out"
+`define INPUT_FILE		"testbench/tb_CompDivider.in"
+`define OUTPUT_FILE		"testbench/tb_CompDivider.out"
 
 // Declaration
 `define LOW		1'b0
 `define HIGH	1'b1
 
-module tb_CompMultiplier;
+module tb_CompDivider;
 
 	// Inputs
 	reg Reset;
 	reg Run;
-	reg [31:0] Multiplicand_in;
-	reg [31:0] Multiplier_in;
+	reg [31:0] Dividend_in;
+	reg [31:0] Divisor_in;
 	
 	// Outputs
-	wire [63:0] Product_out;
+	wire [31:0] Quotient_out;
+	wire [31:0] Remainder_out;
 	wire Ready;
-	wire [31:0] ALU_result;
+	
 	// Clock
 	reg clk = `LOW;
 	
@@ -61,24 +62,24 @@ module tb_CompMultiplier;
 	// Instantiate the Unit Under Test (UUT)
 	CompDivider UUT(
 		// Outputs
-		.Product_out(Product_out),
+		.Quotient_out(Quotient_out),
+		.Remainder_out(Remainder_out),
 		.Ready(Ready),
 		// Inputs
-		.Multiplicand_in(Multiplicand_in),
-		.Multiplier_in(Multiplier_in),
+		.Dividend_in(Dividend_in),
+		.Divisor_in(Divisor_in),
 		.Run(Run),
 		.Reset(Reset),
-		.clk(clk),
-		.ALU_result(ALU_result)
+		.clk(clk)
 	);
 	
 	initial
 	begin : Preprocess
 		// Initialize inputs
-		Reset 			= `LOW;
-		Run 			= `LOW;
-		Multiplicand_in	= 32'd0;
-		Multiplier_in 	= 32'd0;
+		Reset 		= `LOW;
+		Run 		= `LOW;
+		Dividend_in	= 32'd0;
+		Divisor_in	= 32'd0;
 
 		// Initialize testbench files
 		input_file	= $fopen(`INPUT_FILE, "r");
@@ -100,7 +101,7 @@ module tb_CompMultiplier;
 		begin
 			$fscanf(input_file, "%x\n", read_data);
 			@(posedge clk);	// Wait clock
-			{Multiplicand_in, Multiplier_in} = read_data;
+			{Dividend_in, Divisor_in} = read_data;
 			Reset = `HIGH;
 			@(posedge clk);	// Wait clock
 			Reset = `LOW;
@@ -116,14 +117,14 @@ module tb_CompMultiplier;
 		$fclose(output_file);
 
 		// Stop the simulation
-			$stop();
+		$stop();
 	end
 	
 	always @(posedge Ready)
 	begin : Monitoring
-		$display("Multiplicand:%d, Multiplier:%d", Multiplicand_in, Multiplier_in);
-		$display("result:%d", Product_out);
-		$fdisplay(output_file, "%t,%x", $time, Product_out);
+		$display("Dividend_in:%d, Divisor_in:%d", Dividend_in, Divisor_in);
+		$display("Quotient_out:%d, Remainder_out:%d", Quotient_out, Remainder_out);
+		$fdisplay(output_file, "%t,%x_%x", $time, Quotient_out, Remainder_out);
 	end
 	
 endmodule

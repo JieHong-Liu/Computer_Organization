@@ -4,7 +4,7 @@ input Reset;
 input Run;
 input [31:0] Divisor_in;
 input [31:0] Dividend_in;
-output [63:0]Remainder_out_reg;
+wire [63:0]Remainder_out_reg;
 output [31:0]Remainder_out;
 output [31:0]Quotient_out;
 output Ready;
@@ -21,10 +21,11 @@ Control controller
     .Run(Run),
     .Reset(Reset),
     .clk(clk),
-    .MSB(Remainder_out_reg[0]),
+    .MSB(Remainder_out_reg[63]),
     .W_ctrl(W_ctrl),
     .SUBU_ctrl(SUBU_ctrl[5:0]),
     .SRL_ctrl(SRL_ctrl),
+    .SLL_ctrl(SLL_ctrl),
     .Ready(Ready)
 );
 

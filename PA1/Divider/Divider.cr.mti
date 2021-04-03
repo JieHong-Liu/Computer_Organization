@@ -1,9 +1,16 @@
 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Multiplicand
+-- Compiling module tb_Divisor
 
 Top level modules:
-	tb_Multiplicand
+	tb_Divisor
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module Control
+
+Top level modules:
+	Control
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -28,10 +35,10 @@ Top level modules:
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_CompMultiplier
+-- Compiling module tb_CompDivider
 
 Top level modules:
-	tb_CompMultiplier
+	tb_CompDivider
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -40,12 +47,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	tb_ALU
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Remainder.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Product
+-- Compiling module tb_Remainder
 
 Top level modules:
-	Product
+	tb_Remainder
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/Divisor.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -53,12 +60,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 
 Top level modules:
 	Divisor
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Remainder
-
-Top level modules:
-	tb_Remainder
 
 } {} {}}

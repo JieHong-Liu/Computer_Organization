@@ -12,7 +12,7 @@ begin
     // 6'b 001001: {Carry,Result} = Src1 + Src2;
     6'b 001010: 
         begin
-            {Carry,Result} = Src2 - Src1;
+            {Carry,Result} = Src1 - Src2;
             if(Carry == 1)
                 begin
                     Result = Src1;
