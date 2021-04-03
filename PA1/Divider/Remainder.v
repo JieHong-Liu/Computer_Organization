@@ -24,12 +24,19 @@ begin
                         Remainder_out = Remainder_out << 1;
                         Remainder_out[0] = 1;                        
                     end
-                Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
-                Product_out[63] = ALU_carry;// shift 完以後把carry放到第63個bit
+                else
+                    begin
+                        Remainder_out = Remainder_out << 1;
+                        Remainder_out[0] = 0;
+                    end
+        end
+    else if (SRL_ctrl == 1 && Ready == 0)
+        begin
+            Remainder_out[63:32] = Remainder_out[63:32] << 1;
         end
     else if(Ready == 1)
         begin
-            Product_out = Product_out ;
+            Remainder_out = Remainder_out;
         end
     else;
 end

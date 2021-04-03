@@ -9,13 +9,24 @@ always@(Src1 or Src2 or Funct)
 begin
     //  I use case to implement ALU, because ALU usually do a lot of jobs.
     case (Funct[5:0])
-    6'b 001001: {Carry,Result} = Src1 + Src2;
-    6'b 001010: {Carry,Result} = Src1 - Src2;
-    default: // 如果今天LSB==0->不用加的話，就不要加。
-    begin
-        Carry = 0;
-        Result = 0;
-    end
+    // 6'b 001001: {Carry,Result} = Src1 + Src2;
+    6'b 001010: 
+        begin
+            {Carry,Result} = Src2 - Src1;
+            if(Carry == 1)
+                begin
+                    Result = Src1;
+                end
+            else
+                begin
+                    Result = Result;
+                end
+        end
+    default: // 如果今天Funct是別的東西就不用減。
+        begin
+            Carry = 0;
+            Result = 0;
+        end
     endcase
 end
     

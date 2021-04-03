@@ -1,17 +1,18 @@
 module tb_Control();
 
-reg Run,Reset,clk,LSB;
-wire W_ctrl,SRL_ctrl,Ready;
-wire [5:0]ADDU_ctrl;
+reg Run,Reset,clk,MSB;
+wire W_ctrl,SRL_ctrl,SLL_ctrl,Ready;
+wire [5:0]SUBU_ctrl;
 
 Control controller(
     .Run(Run),
     .Reset(Reset),
     .clk(clk),
-    .LSB(LSB),
+    .MSB(MSB),
     .W_ctrl(W_ctrl),
-    .ADDU_ctrl(ADDU_ctrl),
+    .SUBU_ctrl(SUBU_ctrl),
     .SRL_ctrl(SRL_ctrl),
+    .SLL_ctrl(SLL_ctrl),
     .Ready(Ready)
 );
 
@@ -23,8 +24,8 @@ initial begin
 end
 
 initial begin
-    #0 LSB = 0;
-    forever #10 LSB = ~LSB;
+    #0 MSB = 0;
+    forever #10 MSB = ~MSB;
 end
 
 
@@ -38,7 +39,7 @@ initial fork
     #15 Reset = 0;
     #15 Run = 0; 
 
-    #25 Run = 1;    //從這裡開始計數32次 -> 10*32=320，在345的時候，Ready應該要跳1
+    #25 Run = 1;    //從這裡開始計數32次 -> 10*32=320，在345的時候，Ready應該要跳1，這時候W_ctrl =0, SUBU_ctrl = 0, SRL_ctrl = 0, SLL_ctrl = 0, Ready = 1
 join
 
 endmodule
