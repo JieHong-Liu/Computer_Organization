@@ -28,8 +28,8 @@ Control controller
     .Ready(Ready)
 );
 
-// 被乘數
-Multiplicand multiplicand 
+// 被除數
+Divisor divisor 
 (
     .Reset(Reset),
     .W_ctrl(W_ctrl),
@@ -47,8 +47,8 @@ ALU Arithemetic_Logical_Unit
     .Result(ALU_result[31:0])
 );
 
-// product unit
-Product product_unit
+// remain unit
+Remainder remain_unit
 (
     .SRL_ctrl(SRL_ctrl),
     .W_ctrl(W_ctrl),

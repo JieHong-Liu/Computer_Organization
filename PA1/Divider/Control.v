@@ -29,7 +29,16 @@ begin
                 end
             else 
                 begin
-                    // W_ctrl = 0;      // 在Run的時候不要取新的值進來
+                    W_ctrl = 0;      // 在Run的時候不要取新的值進來
+                    SUBU_ctrl = 6'b 001010;
+                    if(MSB == 0) // 代表Remainder >= 0
+                        begin
+                            SLL_ctrl = 1;                       
+                        end
+                    else // Remainder < 0
+                        begin
+                            ADDU_ctrl = 
+                        end
                     // SRL_ctrl = 1;   // 將結果暫存器左半累加被乘數
                     // if (MSB == 1)   // Product[0] == 1 -> ALU要工作，所以我讓ADDU_ctrl = 1;
                     //     begin

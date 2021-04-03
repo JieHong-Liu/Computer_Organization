@@ -5,7 +5,7 @@ input [5:0]Funct;
 output reg [31:0]Result;
 output reg Carry;
 
-always@(Funct)
+always@(Src1 or Src2 or Funct)
 begin
     //  I use case to implement ALU, because ALU usually do a lot of jobs.
     case (Funct[5:0])
