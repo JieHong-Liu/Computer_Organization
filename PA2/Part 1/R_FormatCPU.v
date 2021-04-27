@@ -33,16 +33,16 @@ module R_FormatCPU(
 	input	wire	[31:0]	AddrIn,
 	input	wire			clk
 );
-
+	wire [31:0] Instr;
 	/* 
 	 * Declaration of Instruction Memory.
 	 * CAUTION: DONT MODIFY THE NAME.
 	 */
 	IM Instr_Memory(
 		// Outputs
+		.Instr(Instr),
 		// Inputs
-		.InstrAddr(AddrIn),
-
+		.InstrAddr(AddrIn)
 	);
 
 	/* 
@@ -54,6 +54,9 @@ module R_FormatCPU(
 
 		// Inputs
 		.clk(clk),
+		.RsAddr(Instr[25:21]),
+		.RtAddr(Instr[20:16]),
+		.RdAddr(Instr[15:11])
 
 	);
 

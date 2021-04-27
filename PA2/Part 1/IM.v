@@ -27,27 +27,27 @@
  * CAUTION: DONT MODIFY THE NAME AND VALUE.
  */
 `define INSTR_MEM_SIZE	128	// Bytes
-`define Rtype_op 000100
+`define Rtype_op 6'b000100
 /*
  * Declaration of Instruction Memory for this project.
  * CAUTION: DONT MODIFY THE NAME.
  */
 module IM(
 	// Outputs
-	output reg [31:0]Instr;
+	output reg [31:0]	Instr,
 	// Inputs
-	input InstrAddr;
+	input wire [31:0]	InstrAddr
 );
 
 	/* 
 	 * Declaration of instruction memory.
 	 * CAUTION: DONT MODIFY THE NAME AND SIZE.
 	 */
-	reg [7:0]InstrMem[0:`INSTR_MEM_SIZE - 1];
+	reg [7:0]	InstrMem[0:`INSTR_MEM_SIZE - 1];
 
 	always@(InstrAddr)
 		begin
-			case (InstrAddr)
+			case (InstrAddr)//  			Src1    Src2    Result
 			// 					opcode		Rs 		Rt 		Rd 		Shamt 	Funct
 			32'h0: Instr[31:0]={`Rtype_op,	5'd10,	5'd11,	5'd12,	5'd0,	6'd11};
 			32'h4: Instr[31:0]={`Rtype_op,  5'd13,	5'd12,	5'd21,	5'd0,	6'd13};
