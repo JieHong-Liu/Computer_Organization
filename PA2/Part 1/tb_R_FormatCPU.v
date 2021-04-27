@@ -1,5 +1,5 @@
 /*
- *	Testbench for Project 1 Part 1
+ *	Testbench for Project 2 Part 1
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *
@@ -30,59 +30,66 @@
 
 // Declarations
 `define DELAY			1	// # * timescale
-`define INPUT_FILE		"testbench/tb_CompMultiplier.in"
-`define OUTPUT_FILE		"testbench/tb_CompMultiplier.out"
+`define INSTR_SIZE		8	// bit width
+`define INSTR_MAX		128	// bytes
+`define INSTR_FILE		"testbench/IM.dat"
+`define REG_SIZE		32	// bit width
+`define REG_MAX			32	// words
+`define REG_FILE		"testbench/RF.dat"
+`define OUTPUT_REG		"testbench/RF.out"
 
 // Declaration
 `define LOW		1'b0
 `define HIGH	1'b1
 
-module tb_CompMultiplier;
+module tb_R_FormatCPU;
 
 	// Inputs
-	reg Reset;
-	reg Run;
-	reg [31:0] Multiplicand_in;
-	reg [31:0] Multiplier_in;
+	reg [31:0] AddrIn;
 	
 	// Outputs
-	wire [63:0] Product_out;
-	wire Ready;
-	wire [31:0] ALU_result;
+	wire [31:0] AddrOut;
+	
 	// Clock
-	reg clk = `LOW;
+	reg clk;
 	
 	// Testbench variables
-	reg [63:0] read_data;
-	integer input_file;
-	integer output_file;
+	reg [`INSTR_SIZE-1	:0]	instrMem	[0:`INSTR_MAX-1];
+	reg [`REG_SIZE-1	:0]	regMem		[0:`REG_MAX-1];
+	integer output_reg;
 	integer i;
 	
 	// Instantiate the Unit Under Test (UUT)
-	CompMultiplier UUT(
+	R_FormatCPU UUT(
 		// Outputs
-		.Product_out(Product_out),
-		.Ready(Ready),
+		.AddrOut(AddrOut),
 		// Inputs
-		.Multiplicand_in(Multiplicand_in),
-		.Multiplier_in(Multiplier_in),
-		.Run(Run),
-		.Reset(Reset),
-		.clk(clk),
-		.ALU_result(ALU_result)
+		.AddrIn(AddrIn),
+		.clk(clk)
 	);
 	
 	initial
 	begin : Preprocess
 		// Initialize inputs
-		Reset 			= `LOW;
-		Run 			= `LOW;
-		Multiplicand_in	= 32'd0;
-		Multiplier_in 	= 32'd0;
+		AddrIn	= 32'd0;
+		clk = `LOW;
 
 		// Initialize testbench files
-		input_file	= $fopen(`INPUT_FILE, "r");
-		output_file	= $fopen(`OUTPUT_FILE);
+		$readmemh(`INSTR_FILE,	instrMem);
+		$readmemh(`REG_FILE,	regMem);
+		output_reg	= $fopen(`OUTPUT_REG);
+		
+		// Initialize intruction memory
+		for (i = 0; i < `INSTR_MAX; i = i + 1)
+		begin
+			UUT.Instr_Memory.InstrMem[i] = instrMem[i];
+		end
+		
+		// Initialize register file
+		for (i = 0; i < `REG_MAX; i = i + 1)
+		begin
+			UUT.Register_File.R[i] = regMem[i];
+		end
 
 		#`DELAY;	// Wait for global reset to finish
 	end
@@ -96,34 +103,25 @@ module tb_CompMultiplier;
 	always
 	begin : StimuliProcess
 		// Start testing
-		while (!$feof(input_file))
+		while (AddrIn < `INSTR_MAX - 4)
 		begin
-			$fscanf(input_file, "%x\n", read_data);
-			@(posedge clk);	// Wait clock
-			{Multiplicand_in, Multiplier_in} = read_data;
-			Reset = `HIGH;
-			@(posedge clk);	// Wait clock
-			Reset = `LOW;
-			@(posedge clk);	// Wait clock
-			Run = `HIGH;
-			@(posedge Ready);	// Wait ready
-			Run = `LOW;
+			@(negedge clk);
+			AddrIn <= AddrOut;
+			@(posedge clk);
 		end
 		
-		#`DELAY;	// Wait for result stable
+		// Read out all register value
+		for (i = 0; i < `REG_MAX; i = i + 1)
+		begin
+			regMem[i] = UUT.Register_File.R[i];
+			$fwrite(output_reg, "%x\n", regMem[i]);
+		end
 
 		// Close output file for safety
-		$fclose(output_file);
+		$fclose(output_reg);
 
 		// Stop the simulation
 		$stop();
-	end
-	
-	always @(posedge Ready)
-	begin : Monitoring
-		$display("Multiplicand:%d, Multiplier:%d", Multiplicand_in, Multiplier_in);
-		$display("result:%d", Product_out);
-		$fdisplay(output_file, "%t,%x", $time, Product_out);
 	end
 	
 endmodule

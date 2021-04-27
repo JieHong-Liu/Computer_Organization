@@ -8,23 +8,30 @@ input clk;
 input ALU_carry;
 input [31:0]ALU_result;
 input [31:0]Multiplier_in;
+reg [31:0]Product_reg;
 output reg[63:0]Product_out;
-
+reg first;
 always@(negedge clk or posedge Reset)
 begin
     if (Reset == 1 && W_ctrl == 1)
         begin
             Product_out = 64'b0;
-            Product_out[31:0] = Multiplier_in[31:0];
+            Product_reg[31:0] = Multiplier_in[31:0];
+            first = 1;
         end
     else if(SRL_ctrl == 1 && Ready == 0) 
         begin
-                if(Product_out[0] == 1) // means that LSB = 1;
-                    begin
-                        Product_out[63:32] =  ALU_result[31:0]; // 才要把Result放進Product_out               
-                    end
-                Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
-                Product_out[63] = ALU_carry;// shift 完以後把carry放到第63個bit
+            if(first == 1)
+                begin
+                    first = 0;
+                    Product_out[31:0] = Product_reg[31:0];
+                end
+            if(Product_out[0] == 1) // means that LSB = 1;
+                begin
+                    Product_out[63:32] =  ALU_result[31:0]; // 才要把Result放進Product_out               
+                end
+            Product_out = Product_out >> 1; // 只有shift訊號為1的時候才可以做shift    
+            Product_out[63] = ALU_carry;// shift 完以後把carry放到第63個bit
         end
     else if(Ready == 1)
         begin

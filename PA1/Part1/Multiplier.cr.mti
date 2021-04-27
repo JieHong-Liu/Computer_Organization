@@ -1,57 +1,71 @@
-C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Product.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Product.v
+C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Product.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Product.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module Product
 
 Top level modules:
 	Product
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Control
-
-Top level modules:
-	tb_Control
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Multiplicand.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/Multiplicand.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Multiplicand
-
-Top level modules:
-	Multiplicand
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/CompMultiplier.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module CompMultiplier
-
-Top level modules:
-	CompMultiplier
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/ALU.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/ALU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module ALU
 
 Top level modules:
 	ALU
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_ALU.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/CompMultiplier.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/CompMultiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module CompMultiplier
+
+Top level modules:
+	CompMultiplier
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_Control
+
+Top level modules:
+	tb_Control
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Multiplicand.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/Multiplicand.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module Multiplicand
+
+Top level modules:
+	Multiplicand
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Product.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Product.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_Product
+
+Top level modules:
+	tb_Product
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_ALU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module tb_ALU
 
 Top level modules:
 	tb_ALU
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_Multiplicand.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Multiplicand
-
-Top level modules:
-	tb_Multiplicand
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Multiplier/tb_CompMultiplier.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_CompMultiplier.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_CompMultiplier.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module tb_CompMultiplier
 
 Top level modules:
 	tb_CompMultiplier
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Multiplicand.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part1/tb_Multiplicand.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_Multiplicand
+
+Top level modules:
+	tb_Multiplicand
 
 } {} {}}

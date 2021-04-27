@@ -1,103 +1,40 @@
-vsim -gui work.tb_CompDivider
-# vsim -gui work.tb_CompDivider 
-# Start time: 18:26:18 on Apr 05,2021
-# Loading work.tb_CompDivider
-# Loading work.CompDivider
-# Loading work.Control
-# Loading work.Divisor
-# Loading work.ALU
-# Loading work.Remainder
-# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
-#    Time: 0 ns  Iteration: 0  Region: /tb_CompDivider/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v Line: 102
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 9, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_CompDivider/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v Line: 63
-# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v(63): [TFMPC] - Missing connection for port 'ALU_result'.
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/tb_CompDivider/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlftfjamhv".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfjamhv
-vsim -gui work.tb_ALU
-# End time: 18:26:38 on Apr 05,2021, Elapsed time: 0:00:20
-# Errors: 0, Warnings: 6
-# vsim -gui work.tb_ALU 
-# Start time: 18:26:38 on Apr 05,2021
-# Loading work.tb_ALU
-# Loading work.ALU
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/tb_ALU/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlftxqbqjz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftxqbqjz
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v(19)
-#    Time: 20 ps  Iteration: 0  Instance: /tb_ALU
-# 1
-# Break in Module tb_ALU at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_ALU.v line 19
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_CompDivider.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# 10 compiles, 0 failed with no errors.
 vsim -gui work.tb_Divisor
-# End time: 18:40:13 on Apr 05,2021, Elapsed time: 0:13:35
-# Errors: 0, Warnings: 3
 # vsim -gui work.tb_Divisor 
-# Start time: 18:40:13 on Apr 05,2021
+# Start time: 13:38:27 on Apr 06,2021
 # Loading work.tb_Divisor
 # Loading work.Divisor
 # WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/tb_Divisor/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlft8e6kb7".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft8e6kb7
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v(14)
-#    Time: 30 ps  Iteration: 0  Instance: /tb_Divisor
-# 1
-# Break in Module tb_Divisor at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Divisor.v line 14
-vsim -gui work.tb_Control
-# End time: 18:54:56 on Apr 05,2021, Elapsed time: 0:14:43
-# Errors: 0, Warnings: 3
-# vsim -gui work.tb_Control 
-# Start time: 18:54:56 on Apr 05,2021
-# Loading work.tb_Control
-# Loading work.Control
-add wave -position insertpoint sim:/tb_Control/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlftjibrgf".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjibrgf
-run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v(19)
-#    Time: 400 ps  Iteration: 0  Instance: /tb_Control
-# 1
-# Break in Module tb_Control at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Control.v line 19
 vsim -gui work.tb_Remainder
-# End time: 18:59:30 on Apr 05,2021, Elapsed time: 0:04:34
-# Errors: 0, Warnings: 3
+# End time: 13:38:57 on Apr 06,2021, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 5
 # vsim -gui work.tb_Remainder 
-# Start time: 18:59:30 on Apr 05,2021
+# Start time: 13:38:57 on Apr 06,2021
 # Loading work.tb_Remainder
 # Loading work.Remainder
+# WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/tb_Remainder/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlftrfh6hx".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftrfh6hx
+# Load canceled
 run -all
-# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v(27)
+# ** Note: $finish    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v(27)
 #    Time: 100 ps  Iteration: 0  Instance: /tb_Remainder
 # 1
-# Break in Module tb_Remainder at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_Remainder.v line 27
+# Break in Module tb_Remainder at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v line 27
 vsim -gui work.tb_CompDivider
-# End time: 19:16:30 on Apr 05,2021, Elapsed time: 0:17:00
-# Errors: 0, Warnings: 3
+# End time: 13:40:30 on Apr 06,2021, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 1
 # vsim -gui work.tb_CompDivider 
-# Start time: 19:16:30 on Apr 05,2021
+# Start time: 13:40:30 on Apr 06,2021
 # Loading work.tb_CompDivider
 # Loading work.CompDivider
 # Loading work.Control
@@ -105,16 +42,11 @@ vsim -gui work.tb_CompDivider
 # Loading work.ALU
 # Loading work.Remainder
 # ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
-#    Time: 0 ns  Iteration: 0  Region: /tb_CompDivider/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v Line: 102
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompDivider/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v Line: 102
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 9, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_CompDivider/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v Line: 63
-# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v(63): [TFMPC] - Missing connection for port 'ALU_result'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompDivider/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v Line: 63
+# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v(63): [TFMPC] - Missing connection for port 'ALU_result'.
 add wave -position insertpoint sim:/tb_CompDivider/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 9604
-#           Attempting to use alternate WLF file "./wlftjv0768".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjv0768
 run -all
 # Dividend_in:       100, Divisor_in:        33
 # Quotient_out:         3, Remainder_out:         1
@@ -128,8 +60,52 @@ run -all
 # Quotient_out:       400, Remainder_out:         0
 # Dividend_in:4294967295, Divisor_in:         0
 # Quotient_out:         0, Remainder_out:         X
-# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v(120)
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v(120)
 #    Time: 4560 ns  Iteration: 0  Instance: /tb_CompDivider
-# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Divider/tb_CompDivider.v line 120
-# End time: 19:47:46 on Apr 05,2021, Elapsed time: 0:31:16
-# Errors: 0, Warnings: 6
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v line 120
+# Compile of ALU.v was successful.
+# Compile of CompDivider.v was successful.
+# Compile of Control.v was successful.
+# Compile of Divisor.v was successful.
+# Compile of Remainder.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of tb_CompDivider.v was successful.
+# Compile of tb_Control.v was successful.
+# Compile of tb_Divisor.v was successful.
+# Compile of tb_Remainder.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_CompDivider
+# End time: 13:48:06 on Apr 06,2021, Elapsed time: 0:07:36
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_CompDivider 
+# Start time: 13:48:06 on Apr 06,2021
+# Loading work.tb_CompDivider
+# Loading work.CompDivider
+# Loading work.Control
+# Loading work.Divisor
+# Loading work.ALU
+# Loading work.Remainder
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb_CompDivider/StimuliProcess File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v Line: 102
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 9, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_CompDivider/UUT File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v Line: 63
+# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v(63): [TFMPC] - Missing connection for port 'ALU_result'.
+add wave -position insertpoint sim:/tb_CompDivider/*
+run -all
+# Dividend_in:       100, Divisor_in:        33
+# Quotient_out:         3, Remainder_out:         1
+# Dividend_in:         0, Divisor_in:         1
+# Quotient_out:         0, Remainder_out:         0
+# Dividend_in:         0, Divisor_in:4294967295
+# Quotient_out:         0, Remainder_out:         0
+# Dividend_in:      2021, Divisor_in:         4
+# Quotient_out:       505, Remainder_out:         1
+# Dividend_in:      1200, Divisor_in:         3
+# Quotient_out:       400, Remainder_out:         0
+# Dividend_in:4294967295, Divisor_in:         0
+# Quotient_out:         0, Remainder_out:         X
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v(120)
+#    Time: 4560 ns  Iteration: 0  Instance: /tb_CompDivider
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v line 120
+# End time: 13:54:08 on Apr 06,2021, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 4

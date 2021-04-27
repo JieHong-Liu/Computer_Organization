@@ -9,17 +9,25 @@ input ALU_carry;
 input [31:0]ALU_result;
 input [31:0]Dividend_in;
 output reg[63:0]Remainder_out;
+reg [31:0]Remainder_reg;
 reg counting; // start to count or not.
+reg first;
 always@(negedge clk or posedge Reset)
     begin
         if (Reset == 1 && W_ctrl == 1)
             begin
                 Remainder_out = 64'b0;
-                Remainder_out[31:0] = Dividend_in[31:0];
+                Remainder_reg[31:0] = Dividend_in[31:0];
                 counting = 0;
+                first = 1;
             end
         else if(SLL_ctrl == 1 && Ready == 0) 
             begin
+                if(first == 1)
+                    begin
+                        first = 0;
+                        Remainder_out[31:0] = Remainder_reg[31:0];
+                    end
                 if(counting == 0)
                     begin
                         if(SLL_ctrl == 1)
