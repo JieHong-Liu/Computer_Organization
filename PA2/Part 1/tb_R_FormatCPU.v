@@ -49,7 +49,7 @@ module tb_R_FormatCPU;
 	
 	// Outputs
 	wire [31:0] AddrOut;
-	
+	wire [31:0] Instr;
 	// Clock
 	reg clk;
 	
@@ -63,6 +63,7 @@ module tb_R_FormatCPU;
 	R_FormatCPU UUT(
 		// Outputs
 		.AddrOut(AddrOut),
+		.Instr(Instr),
 		// Inputs
 		.AddrIn(AddrIn),
 		.clk(clk)

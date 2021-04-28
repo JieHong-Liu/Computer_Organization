@@ -4,6 +4,6 @@ module Adder
     output  [31:0]  AddrOut
 );
 
-    assign AddrOut = AddrIn + 32'd4;
+    assign AddrOut = AddrIn + 32'd 4;
 
 endmodule

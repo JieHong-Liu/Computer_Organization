@@ -36,7 +36,7 @@ module IM(
 	// Outputs
 	output reg [31:0]	Instr,
 	// Inputs
-	input wire [31:0]	InstrAddr
+	input  [31:0]	InstrAddr
 );
 
 	/* 
@@ -47,13 +47,7 @@ module IM(
 
 	always@(InstrAddr)
 		begin
-			case (InstrAddr)//  			Src1    Src2    Result
-			// 					opcode		Rs 		Rt 		Rd 		Shamt 	Funct
-			32'h0: Instr[31:0]={`Rtype_op,	5'd10,	5'd11,	5'd12,	5'd0,	6'd11}; // 
-			32'h4: Instr[31:0]={`Rtype_op,  5'd13,	5'd12,	5'd21,	5'd0,	6'd13}; // 
-			32'h8: Instr[31:0]={`Rtype_op, 	5'd17,	5'd18,	5'd22,	5'd0,	6'd18}; // 
-			32'hC: Instr[31:0]={`Rtype_op,	5'd14,  5'd0,	5'd23,  5'd10,	6'd42}; //
-			endcase
+			Instr[31:0] = {InstrMem[InstrAddr], InstrMem[InstrAddr+1],InstrMem[InstrAddr+2],InstrMem[InstrAddr+3]};
 		end
 
 endmodule

@@ -29,11 +29,18 @@
 module R_FormatCPU(
 	// Outputs
 	output	wire	[31:0]	AddrOut,
+	output  wire    [31:0]  Instr,
 	// Inputs
 	input	wire	[31:0]	AddrIn,
 	input	wire			clk
 );
-	wire [31:0] Instr;
+	// wire [31:0] Instr;
+	wire [31:0] ALU_result;
+	wire [31:0] RsData;
+	wire [31:0] RtData;
+	wire [1:0] ALUOp;
+	wire [5:0] Funct;
+	wire RegWrite;
 	/* 
 	 * Declaration of Instruction Memory.
 	 * CAUTION: DONT MODIFY THE NAME.
@@ -51,20 +58,48 @@ module R_FormatCPU(
 	 */
 	RF Register_File(
 		// Outputs
-
+		.RsData(RsData),
+		.RtData(RtData),
 		// Inputs
 		.clk(clk),
+		.RegWrite(RegWrite),
 		.RsAddr(Instr[25:21]),
 		.RtAddr(Instr[20:16]),
-		.RdAddr(Instr[15:11])
-
+		.RdAddr(Instr[15:11]),
+		.RdData(ALU_result[31:0])
 	);
 
 	Adder adder(
 		// Outputs
 		.AddrOut(AddrOut),
 		// Inputs
+		.AddrIn(AddrIn)
+	);
 
+	ALU alu(
+		// Inputs
+		.Src1(RsData[31:0]),
+		.Src2(RtData[31:0]),
+		.Shamt(Instr[10:6]),
+		.Funct(Funct[5:0]),
+		// Outputs
+		.result(ALU_result[31:0])
+	);
+
+	Control controller(
+		// Inputs
+		.OpCode(Instr[31:26]),
+		// Outputs
+		.RegWrite(RegWrite),
+		.ALUOp(ALUOp[1:0])
+	);
+
+	ALU_Control ALU_controller(
+		// Inputs
+		.funct(Instr[5:0]),
+		.ALUOp(ALUOp[1:0]),
+		// Outputs
+		.Funct(Funct[5:0])
 	);
 
 endmodule

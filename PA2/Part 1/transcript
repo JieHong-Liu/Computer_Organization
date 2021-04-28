@@ -1,0 +1,493 @@
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v failed with 1 errors.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v failed with 1 errors.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 12:08:57 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU_Control.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_R_FormatCPU/UUT/ALU_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_FormatCPU.v Line: 97
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+# Load canceled
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:15:53 on Apr 28,2021, Elapsed time: 1:06:56
+# Errors: 0, Warnings: 14
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:15:53 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU_Control.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_R_FormatCPU/UUT/ALU_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_FormatCPU.v Line: 97
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+# ** Error: ¦¨³©¡
+#        Unable to replace existing ini file (C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_type.mpf).  File can not be renamed.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:18:53 on Apr 28,2021, Elapsed time: 0:03:00
+# Errors: 1, Warnings: 3
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:18:53 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:19:46 on Apr 28,2021, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 34
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:19:46 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:30:18 on Apr 28,2021, Elapsed time: 0:10:32
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:30:18 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:35:22 on Apr 28,2021, Elapsed time: 0:05:04
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:35:22 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(124)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 124
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:51:02 on Apr 28,2021, Elapsed time: 0:15:40
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:51:02 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:54:49 on Apr 28,2021, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:54:49 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:57:07 on Apr 28,2021, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:57:07 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 13:59:28 on Apr 28,2021, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 13:59:28 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 620 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 14:07:07 on Apr 28,2021, Elapsed time: 0:07:39
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 14:07:07 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# End time: 14:11:09 on Apr 28,2021, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 14:11:09 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_R_FormatCPU/UUT/Instr_Memory File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_FormatCPU.v Line: 48
+# Error loading design
+# End time: 14:11:10 on Apr 28,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of IM.v was successful.
+# Compile of R_FormatCPU.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_R_FormatCPU.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_R_FormatCPU
+# vsim -gui work.tb_R_FormatCPU 
+# Start time: 14:11:38 on Apr 28,2021
+# Loading work.tb_R_FormatCPU
+# Loading work.R_FormatCPU
+# Loading work.IM
+# Loading work.RF
+# Loading work.Adder
+# Loading work.ALU
+# Loading work.Control
+# Loading work.ALU_Control
+add wave -position insertpoint sim:/tb_R_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v(125)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_R_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v line 125
