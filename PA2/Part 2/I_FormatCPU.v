@@ -34,37 +34,122 @@ module I_FormatCPU(
 	input	wire			clk
 );
 
+	wire [31:0] Instr;
+	wire [31:0] ALU_result;
+
+	wire [31:0] MUX32A_result;
+	wire [31:0] MUX32B_result;
+	wire [5:0]  MUX5_result;
+	wire [31:0] Sign_Extend;
+
+	wire [31:0] RsData;
+	wire [31:0] RtData;
+	wire [5:0] Funct;
+	// Controller
+	wire RegWrite;
+	wire RegDst;
+	wire ALUSrc;
+	wire MemWrite;
+	wire MemRead;
+	wire MemtoReg;
+
+	wire [1:0] ALUOp;
+
+	// DM
+	wire [31:0] MemReadData;
+
 	/* 
 	 * Declaration of Instruction Memory.
 	 * CAUTION: DONT MODIFY THE NAME.
 	 */
 	IM Instr_Memory(
 		// Outputs
-
+		.Instr(Instr),
 		// Inputs
-
+		.InstrAddr(AddrIn)
 	);
 
+	Adder adder(
+		// Outputs
+		.AddrOut(AddrOut),
+		// Inputs
+		.AddrIn(AddrIn)
+	);
+
+	Mux5b mux5b(
+		.Src1(Instr[20:16]),
+		.Src2(Instr[15:11]),
+		.choose(RegDst),
+		.result(MUX5_result)
+	);
 	/* 
 	 * Declaration of Register File.
 	 * CAUTION: DONT MODIFY THE NAME.
 	 */
 	RF Register_File(
 		// Outputs
-
+		.RsData(RsData),
+		.RtData(RtData),
 		// Inputs
-
+		.clk(clk),
+		.RegWrite(RegWrite),
+		.RsAddr(Instr[25:21]),
+		.RtAddr(Instr[20:16]),
+		.RdAddr(MUX5_result),
+		.RdData(MUX32B_result)
+	);
+	assign Sign_Extend = Instr[15]?{16'hFFFF,Instr[15:0]}:{16'h0000,Instr[15:0]};
+	Mux32b A32(
+		.Src1(RtData),
+		.Src2(Sign_Extend),
+		.result(MUX32A_result),
+		.choose(ALUSrc)
 	);
 
+	ALU alu(
+		.Src1(RsData),
+		.Src2(MUX32A_result),
+		.Shamt(Instr[10:6]),
+		.Funct(Funct),
+		.result(ALU_result)
+	);
+
+	ALU_Control aluControl(
+		.funct(Instr[5:0]),
+		.ALUOp(ALUOp),
+		.Funct(Funct)
+	);
+	Control controller(
+		.OpCode(Instr[31:26]),
+		.RegWrite(RegWrite),
+		.RegDst(RegDst),
+		.ALUSrc(ALUSrc),
+		.MemWrite(MemWrite),
+		.MemRead(MemRead),
+		.MemtoReg(MemtoReg),
+		.ALUOp(AluOp)
+	);
 	/* 
 	 * Declaration of Data Memory.
 	 * CAUTION: DONT MODIFY THE NAME.
 	 */
 	DM Data_Memory(
 		// Outputs
+		.MemReadData(MemReadData),
 
 		// Inputs
+		.MemAddr(ALU_result),
+		.MemWriteData(RtData),
+		.MemWrite(MemWrite),
+		.MemRead(MemRead),
+		.clk(clk)
+	);
 
+	Mux32b mux32b(
+		.Src1(ALU_result),
+		.Src2(MemReadData),
+		.choose(MemtoReg),
+		.result(MUX32B_result)
 	);
 
 endmodule

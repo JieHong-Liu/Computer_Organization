@@ -1,5 +1,5 @@
 /*
- *	Template for Project 2 Part 2
+ *	Template for Project 2 Part 1
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *
@@ -27,22 +27,26 @@
  * CAUTION: DONT MODIFY THE NAME AND VALUE.
  */
 `define INSTR_MEM_SIZE	128	// Bytes
-
 /*
  * Declaration of Instruction Memory for this project.
  * CAUTION: DONT MODIFY THE NAME.
  */
 module IM(
 	// Outputs
-
+	output reg [31:0]	Instr,
 	// Inputs
-
+	input  [31:0]	InstrAddr
 );
 
 	/* 
 	 * Declaration of instruction memory.
 	 * CAUTION: DONT MODIFY THE NAME AND SIZE.
 	 */
-	reg [7:0]InstrMem[0:`INSTR_MEM_SIZE - 1];
+	reg [7:0]	InstrMem[0:`INSTR_MEM_SIZE - 1];
+
+	always@(InstrAddr)
+		begin
+			Instr[31:0] = {InstrMem[InstrAddr], InstrMem[InstrAddr+1],InstrMem[InstrAddr+2],InstrMem[InstrAddr+3]};
+		end
 
 endmodule
