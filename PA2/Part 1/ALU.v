@@ -18,6 +18,7 @@ always@(Funct or Shamt or Src1 or Src2)
             `subu : result = Src1 -  Src2;
             `AND  : result = Src1 &  Src2;
             `sll  : result = Src1 << Shamt;
+            default: result = result; // if Funct is not same as above, then the result will be the same value.
         endcase
     end
 

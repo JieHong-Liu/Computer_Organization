@@ -1,30 +1,9 @@
-{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v}
+{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_IM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_IM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_R_FormatCPU
+-- Compiling module tb_IM
 
 Top level modules:
-	tb_R_FormatCPU
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/RF.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/RF.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module RF
-
-Top level modules:
-	RF
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Adder.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Adder.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Adder
-
-Top level modules:
-	Adder
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Control.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Control
-
-Top level modules:
-	Control
+	tb_IM
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/IM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/IM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -33,12 +12,75 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	IM
 
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_Control
+
+Top level modules:
+	tb_Control
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_ALU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_ALU
+
+Top level modules:
+	tb_ALU
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Adder.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_FormatCPU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/R_FormatCPU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module R_FormatCPU
+
+Top level modules:
+	R_FormatCPU
+
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU_Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU_Control.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module ALU_Control
 
 Top level modules:
 	ALU_Control
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Adder.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_Adder
+
+Top level modules:
+	tb_Adder
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_R_FormatCPU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_R_FormatCPU
+
+Top level modules:
+	tb_R_FormatCPU
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_ALU_Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_ALU_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_ALU_Control
+
+Top level modules:
+	tb_ALU_Control
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/RF.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/RF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module Control
+
+Top level modules:
+	Control
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/ALU.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
