@@ -39,7 +39,7 @@ module I_FormatCPU(
 
 	wire [31:0] MUX32A_result;
 	wire [31:0] MUX32B_result;
-	wire [5:0]  MUX5_result;
+	wire [4:0]  MUX5_result;
 	wire [31:0] Sign_Extend;
 
 	wire [31:0] RsData;
@@ -98,7 +98,7 @@ module I_FormatCPU(
 		.RdAddr(MUX5_result),
 		.RdData(MUX32B_result)
 	);
-	assign Sign_Extend = Instr[15]?{16'hFFFF,Instr[15:0]}:{16'h0000,Instr[15:0]};
+	assign Sign_Extend = {16'h0000,Instr[15:0]}; // unsigned operation.
 	Mux32b A32(
 		.Src1(RtData),
 		.Src2(Sign_Extend),
@@ -127,7 +127,7 @@ module I_FormatCPU(
 		.MemWrite(MemWrite),
 		.MemRead(MemRead),
 		.MemtoReg(MemtoReg),
-		.ALUOp(AluOp)
+		.ALUOp(ALUOp)
 	);
 	/* 
 	 * Declaration of Data Memory.
@@ -136,7 +136,6 @@ module I_FormatCPU(
 	DM Data_Memory(
 		// Outputs
 		.MemReadData(MemReadData),
-
 		// Inputs
 		.MemAddr(ALU_result),
 		.MemWriteData(RtData),

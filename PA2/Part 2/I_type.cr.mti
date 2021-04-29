@@ -1,16 +1,16 @@
-{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU_Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU_Control.v}
+{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU_Control.v} {1 {vlog -work work -stats=none {C:\Users\jieho\Documents\coding\HDL\Computer_Organization\PA2\Part 2\ALU_Control.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module ALU_Control
 
 Top level modules:
 	ALU_Control
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/IM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/IM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -40,6 +40,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	RF
 
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/DM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/DM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_FormatCPU.v} {1 {vlog -work work -stats=none {C:\Users\jieho\Documents\coding\HDL\Computer_Organization\PA2\Part 2\I_FormatCPU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module I_FormatCPU
+
+Top level modules:
+	I_FormatCPU
+
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Mux32b.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Mux32b.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module Mux32b
@@ -53,19 +67,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 
 Top level modules:
 	Mux5b
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Control.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Control
-
-Top level modules:
-	Control
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/DM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/DM.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module DM
-
-Top level modules:
-	DM
 
 } {} {}}

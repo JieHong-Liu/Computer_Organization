@@ -41,7 +41,7 @@ always@(funct or ALUOp)
                 begin
                     Funct = `addu;
                 end
-            default:    Funct = 0;
+            default:;
         endcase
     end
 endmodule

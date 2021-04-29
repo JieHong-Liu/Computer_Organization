@@ -129,3 +129,457 @@ run -all
 # ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
 #    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
 # Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Load canceled
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+# ** Error: ¦¨³©¡
+#        Unable to replace existing ini file (C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_type.mpf).  File can not be renamed.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:00:23 on Apr 30,2021, Elapsed time: 0:42:55
+# Errors: 1, Warnings: 8
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:00:23 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Control.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_I_FormatCPU/UUT/controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_FormatCPU.v Line: 122
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:00:36 on Apr 30,2021, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:00:36 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/Control.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_I_FormatCPU/UUT/controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_FormatCPU.v Line: 122
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Error opening C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/(vsim-3015) [PCDPC] - Port size (2) does not match connection size 
+# Path name 'C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/(vsim-3015) [PCDPC] - Port size (2) does not match connection size ' doesn't exist.
+# WARNING: No extended dataflow license exists
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+# ** Error: ¦¨³©¡
+#        Unable to replace existing ini file (C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_type.mpf).  File can not be renamed.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:03:23 on Apr 30,2021, Elapsed time: 0:02:47
+# Errors: 1, Warnings: 3
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:03:23 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+# WARNING: No extended dataflow license exists
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:03:43 on Apr 30,2021, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:03:43 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:16:04 on Apr 30,2021, Elapsed time: 0:12:21
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:16:04 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# ** Error: ¦¨³©¡
+#        Unable to replace existing ini file (C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_type.mpf).  File can not be renamed.
+# End time: 02:27:54 on Apr 30,2021, Elapsed time: 0:11:50
+# Errors: 1, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:27:54 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:28:15 on Apr 30,2021, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:28:15 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:33:28 on Apr 30,2021, Elapsed time: 0:05:13
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:33:28 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:35:53 on Apr 30,2021, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:35:53 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:38:42 on Apr 30,2021, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:38:42 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:42:54 on Apr 30,2021, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:42:54 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:45:25 on Apr 30,2021, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:45:25 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of I_FormatCPU.v was successful.
+# Compile of IM.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_I_FormatCPU.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_I_FormatCPU
+# End time: 02:47:33 on Apr 30,2021, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_I_FormatCPU 
+# Start time: 02:47:33 on Apr 30,2021
+# Loading work.tb_I_FormatCPU
+# Loading work.I_FormatCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Control
+# Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146

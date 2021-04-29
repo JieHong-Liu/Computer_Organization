@@ -55,12 +55,9 @@ module DM(
 		begin
 			if(MemWrite == 1)
 				begin
-					DataMem[MemAddr] = MemWriteData;
+					{DataMem[MemAddr],DataMem[MemAddr+1],DataMem[MemAddr+2],DataMem[MemAddr+3]} = MemWriteData;
 				end
-			else
-				begin
-					DataMem[MemAddr] = DataMem[MemAddr];
-				end
+			else;
 		end
 
 
