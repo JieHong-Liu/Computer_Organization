@@ -1,5 +1,5 @@
 /*
- *	Template for Project 2 Part 1
+ *	Template for Project 2 Part 2
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *

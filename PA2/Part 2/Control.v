@@ -67,7 +67,12 @@ always@(OpCode)
                     MemRead = 1;
                     MemtoReg= 1;
                 end
-            default:;
+            default:
+                begin
+                    MemWrite = 0;
+                    RegWrite = 0;
+                    
+                end
         endcase
     
     end
