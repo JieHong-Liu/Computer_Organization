@@ -61,9 +61,15 @@ module SimpleCPU(
 		wire MemWrite;
 		wire MemRead;
 		wire MemtoReg;
+		wire Jump;
+		wire Branch;
 
-	assgin 	Sign_Extend = {16'h0000,Instr[15:0]};
+	// Data Memory
+		wire [31:0] MemReadData;
 
+
+
+	assign 	Sign_Extend = {16'h0000,Instr[15:0]};
 
 	/* 
 	 * Declaration of Instruction Memory.
@@ -141,9 +147,9 @@ module SimpleCPU(
 
 	Mux32b D32(
 		.Src1(MUX32C_result),
-		.Src2({4'b0000,Instr[25:0],2'b00}),
-		.result(MUX32C_result),
-		.choose(Branch & zeroFlag)
+		.Src2({4'b0000,Instr[25:0],2'b00}),// 4 + 26 + 2 = 32;
+		.result(AddrOut),
+		.choose(Jump)
 	);
 	/* 
 	 * Declaration of Data Memory.
@@ -151,9 +157,31 @@ module SimpleCPU(
 	 */
 	DM Data_Memory(
 		// Outputs
-
+		.MemReadData(MemReadData),
 		// Inputs
-
+		.MemAddr(ALU_result),
+		.MemWriteData(RtData),
+		.MemWrite(MemWrite),
+		.MemRead(MemRead),
+		.MemtoReg(MemtoReg),
+		.clk(clk)
 	);
 
+	Control controller(
+		.OpCode(Instr[31:26]),
+		.RegDst(RegDst),
+		.Branch(Branch),
+		.RegWrite(RegWrite),
+		.ALUSrc(ALUSrc),
+		.MemWrite(MemWrite),
+		.MemRead(MemRead),
+		.MemtoReg(MemtoReg),
+		.Jump(Jump)
+	);
+	
+	ALU_Control alu_controller(
+		.funct(Instr[5:0]),
+		.ALUOp(ALUOp),
+		.Funct(Funct)
+	);
 endmodule

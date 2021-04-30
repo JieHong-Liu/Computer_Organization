@@ -144,7 +144,7 @@ module I_FormatCPU(
 		.clk(clk)
 	);
 
-	Mux32b mux32b(
+	Mux32b B32(
 		.Src1(ALU_result),
 		.Src2(MemReadData),
 		.choose(MemtoReg),
