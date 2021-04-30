@@ -1,23 +1,16 @@
-C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_CompDivider
-
-Top level modules:
-	tb_CompDivider
-
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_ALU.v
+C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_ALU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module tb_ALU
 
 Top level modules:
 	tb_ALU
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_CompDivider.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Remainder
+-- Compiling module tb_CompDivider
 
 Top level modules:
-	tb_Remainder
+	tb_CompDivider
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/Divisor.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/Divisor.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -26,12 +19,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	Divisor
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Divisor.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Divisor.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Remainder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Divisor
+-- Compiling module tb_Remainder
 
 Top level modules:
-	tb_Divisor
+	tb_Remainder
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/Control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -40,12 +33,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	Control
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Control.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Divisor.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Divisor.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_Control
+-- Compiling module tb_Divisor
 
 Top level modules:
-	tb_Control
+	tb_Divisor
+
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
 
 } {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/CompDivider.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/CompDivider.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -54,11 +54,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	CompDivider
 
-} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/ALU.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/ALU.v
+} {} {}} C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Control.v {1 {vlog -work work -stats=none C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA1/Part2/tb_Control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module ALU
+-- Compiling module tb_Control
 
 Top level modules:
-	ALU
+	tb_Control
 
 } {} {}}

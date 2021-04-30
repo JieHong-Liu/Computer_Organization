@@ -63,7 +63,6 @@ module tb_R_FormatCPU;
 	R_FormatCPU UUT(
 		// Outputs
 		.AddrOut(AddrOut),
-		.Instr(Instr),
 		// Inputs
 		.AddrIn(AddrIn),
 		.clk(clk)

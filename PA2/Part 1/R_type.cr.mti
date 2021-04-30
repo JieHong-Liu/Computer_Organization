@@ -47,6 +47,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	ALU_Control
 
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_RF.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_RF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module tb_RF
+
+Top level modules:
+	tb_RF
+
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Adder.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 1/tb_Adder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module tb_Adder

@@ -29,12 +29,11 @@
 module R_FormatCPU(
 	// Outputs
 	output	wire	[31:0]	AddrOut,
-	output  wire    [31:0]  Instr,
 	// Inputs
 	input	wire	[31:0]	AddrIn,
 	input	wire			clk
 );
-	// wire [31:0] Instr;
+	wire [31:0] Instr;
 	wire [31:0] ALU_result;
 	wire [31:0] RsData;
 	wire [31:0] RtData;
