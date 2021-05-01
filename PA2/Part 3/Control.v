@@ -82,14 +82,14 @@ always@(OpCode)
             6'd 19: // beq
                 begin
                     ALUOp = 2'b00;
-                    // RegDst = x;
+                    // RegDst = 1'bx;
                     Jump = 0;
                     Branch = 1;
                     RegWrite = 0;
-                    ALUSrc = 1;
+                    ALUSrc = 0;
                     MemWrite = 0;
                     MemRead = 0;
-                    MemtoReg = 0;
+                    // MemtoReg = x;
                 end
             6'd 28: // j
                 begin

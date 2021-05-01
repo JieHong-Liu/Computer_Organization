@@ -1,11 +1,4 @@
-{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Control.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module Control
-
-Top level modules:
-	Control
-
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Mux32b.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Mux32b.v}
+{C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Mux32b.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Mux32b.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module Mux32b
 
@@ -25,6 +18,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 
 Top level modules:
 	DM
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module SimpleCPU
+
+Top level modules:
+	SimpleCPU
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/IM.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/IM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020

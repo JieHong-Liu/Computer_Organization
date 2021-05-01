@@ -226,3 +226,37 @@ vsim -gui work.tb_SimpleCPU
 # WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/tb_SimpleCPU/*
 run -all
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# End time: 21:16:53 on May 01,2021, Elapsed time: 0:06:43
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:16:53 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_SimpleCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/tb_SimpleCPU.v(146)
+#    Time: 1470 ns  Iteration: 1  Instance: /tb_SimpleCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/tb_SimpleCPU.v line 146
