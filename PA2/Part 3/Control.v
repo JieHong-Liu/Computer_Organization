@@ -3,7 +3,7 @@
 // I-type add  
 `define I_type_add 2'b01
 module Control(
-    input   [5:0]   OpCode,
+    input   [5:0]       OpCode,
     output reg          RegWrite,
     output reg  [1:0]   ALUOp,
     output reg          RegDst,
@@ -27,6 +27,8 @@ always@(OpCode)
                     MemWrite = 0;
                     MemRead = 0;
                     MemtoReg = 0;
+                    Jump = 0;
+                    Branch = 0;
                 end
             // I format.
             6'd 12: // addiu
@@ -38,6 +40,8 @@ always@(OpCode)
                     MemWrite = 0;
                     MemRead = 0;
                     MemtoReg = 0;
+                    Jump = 0;
+                    Branch = 0;
                 end
             6'd 13: // subiu
                 begin
@@ -48,6 +52,8 @@ always@(OpCode)
                     MemWrite=0;
                     MemRead = 0;
                     MemtoReg = 0;
+                    Jump = 0;
+                    Branch = 0;
                 end
             6'd 16: // sw
                 begin
@@ -56,7 +62,9 @@ always@(OpCode)
                     // RegDst = 1'b x; // I format -> write into Rt
                     ALUSrc = 1;
                     MemWrite = 1;
-                    MemRead = 0;
+                    MemRead = 0;                    
+                    Jump = 0;
+                    Branch = 0;
                     // MemtoReg = 1'b x; // Since the SW would not read the value from memory.
                 end
             6'd 17: // lw
@@ -68,17 +76,32 @@ always@(OpCode)
                     MemWrite = 0;
                     MemRead = 1;
                     MemtoReg= 1;
+                    Jump = 0;
+                    Branch = 0;
                 end
             6'd 19: // beq
                 begin
                     ALUOp = 2'b00;
-                    RegWrite = 1;
                     // RegDst = x;
-                    
+                    Jump = 0;
+                    Branch = 1;
+                    RegWrite = 0;
+                    ALUSrc = 1;
+                    MemWrite = 0;
+                    MemRead = 0;
+                    MemtoReg = 0;
                 end
             6'd 28: // j
                 begin
-                    
+                    ALUOp = 2'b00;
+                    // RegDst = x;
+                    Jump = 1;
+                    Branch = 0;
+                    RegWrite = 0;
+                    ALUSrc = 1;
+                    MemWrite = 0;
+                    MemRead = 0;
+                    MemtoReg = 0;
                 end
             default:
                 begin

@@ -42,6 +42,9 @@ module SimpleCPU(
 		wire [31:0] ALU_result;	
 		wire 		zeroFlag;
 
+	// ALU controller
+		wire [5:0] Funct;
+
 	// MUX
 		wire [31:0] MUX32A_result;// middle left
 		wire [31:0] MUX32B_result;// middle right
@@ -63,10 +66,12 @@ module SimpleCPU(
 		wire MemtoReg;
 		wire Jump;
 		wire Branch;
+		wire [1:0] ALUOp;
 
 	// Data Memory
 		wire [31:0] MemReadData;
-
+	// IM
+		wire [31:0] Instr;
 
 
 	assign 	Sign_Extend = {16'h0000,Instr[15:0]};
@@ -138,6 +143,12 @@ module SimpleCPU(
 		.Zero(zeroFlag)
 	);
 
+	Mux32b B32(
+		.Src1(ALU_result),
+		.Src2(MemReadData),
+		.choose(MemtoReg),
+		.result(MUX32B_result)
+	);
 	Mux32b C32(
 		.Src1(AdderDataOut1),
 		.Src2(AdderDataOut2),
@@ -163,7 +174,6 @@ module SimpleCPU(
 		.MemWriteData(RtData),
 		.MemWrite(MemWrite),
 		.MemRead(MemRead),
-		.MemtoReg(MemtoReg),
 		.clk(clk)
 	);
 
@@ -176,7 +186,8 @@ module SimpleCPU(
 		.MemWrite(MemWrite),
 		.MemRead(MemRead),
 		.MemtoReg(MemtoReg),
-		.Jump(Jump)
+		.Jump(Jump),
+		.ALUOp(ALUOp)
 	);
 	
 	ALU_Control alu_controller(

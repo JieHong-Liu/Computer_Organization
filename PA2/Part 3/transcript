@@ -1,0 +1,228 @@
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v failed with 1 errors.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:00:43 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'Funct'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/ALU.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/alu File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 133
+# ** Error (suppressible): (vsim-3389) Port 'MemtoReg' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/Data_Memory File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 159
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 10, found 9.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 171
+# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v(171): [TFMPC] - Missing connection for port 'ALUOp'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/ALU_Control.v(19).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/alu_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 183
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'Funct'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/ALU_Control.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/alu_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 183
+# Error loading design
+# End time: 21:00:44 on May 01,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 11
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:02:02 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Error (suppressible): (vsim-3389) Port 'MemtoReg' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/Data_Memory File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 162
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'controller'.  Expected 10, found 9.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 174
+# ** Warning: (vsim-3722) C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v(174): [TFMPC] - Missing connection for port 'ALUOp'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/ALU_Control.v(19).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/alu_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 186
+# Error loading design
+# End time: 21:02:03 on May 01,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:05:05 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Error (suppressible): (vsim-3389) Port 'MemtoReg' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/Data_Memory File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 162
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Control.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 174
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ALUOp'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/ALU_Control.v(19).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/alu_controller File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 187
+# Error loading design
+# End time: 21:05:06 on May 01,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Load canceled
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:05:50 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Error (suppressible): (vsim-3389) Port 'MemtoReg' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/Data_Memory File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 163
+# Error loading design
+# End time: 21:05:50 on May 01,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v failed with 1 errors.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 1 failed with 1 error.
+# Load canceled
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:08:04 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/Mux32b.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_SimpleCPU/UUT/B32 File: C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 3/SimpleCPU.v Line: 146
+# WARNING: No extended dataflow license exists
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of IM.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of SimpleCPU.v was successful.
+# Compile of tb_SimpleCPU.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_SimpleCPU
+# End time: 21:10:10 on May 01,2021, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_SimpleCPU 
+# Start time: 21:10:10 on May 01,2021
+# Loading work.tb_SimpleCPU
+# Loading work.SimpleCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.Mux5b
+# Loading work.RF
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.DM
+# Loading work.Control
+# Loading work.ALU_Control
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_SimpleCPU/*
+run -all
