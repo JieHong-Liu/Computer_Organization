@@ -59,7 +59,7 @@ module R_PipelineCPU(
 	wire [4:0] RdAddr_mem_out;
 
 
-// EX/MEM
+// MEM/WB
 	wire RegWrite_wb_out;
 	wire [31:0] ALU_result_wb_out;
 	wire [4:0] RdAddr_wb_out;

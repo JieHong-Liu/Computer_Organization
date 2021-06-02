@@ -34,15 +34,92 @@ module I_PipelineCPU(
 	input	wire			clk
 );
 
+//  Instruction Memory	
+	wire [31:0] Instr;
+	wire [31:0] Instr_out;
+
+// ID/EX.
+	wire [31:0] ALU_result;
+	wire [31:0] RsData;
+	wire [31:0] RsData_out;
+	wire [31:0] RtData;
+	wire [31:0] RtData_out;
+	wire [1:0] ALUOp;
+	wire [1:0] ALUOp_out;
+
+	wire [4:0] RdAddr_out;
+
+
+// EX/MEM
+	wire RegWrite_mem_out;
+	wire Mem2Reg_out;
+	wire [31:0] MemAddr;
+	wire [4:0] RdAddr_mem_out;
+	wire [31:0] MemWriteData;
+
+// MEM/WB
+	wire RegWrite_wb_out;
+	wire [31:0] ALU_result_wb_out;
+	wire [4:0] RdAddr_wb_out;
+
+// Controller
+	wire RegWrite;
+	wire RegWrite_out;
+
+	wire RegDst;
+	wire RegDst_out;
+	
+	wire ALUSrc;
+	wire ALSrc_out;
+
+	wire MemWrite;
+	wire MemWrite_out;
+
+	wire MemRead;
+	wire MemRead_out;
+
+	wire MemtoReg;
+	wire MemtoReg_out;
+// ALUOp
+	wire [5:0]Funct;	
+// MUX
+	wire [31:0]	MUX32A_result;
+	wire [31:0]	MUX32B_result;
+	wire [4:0]  MUX5_result;
+
 	/* 
 	 * Declaration of Instruction Memory.
 	 * CAUTION: DONT MODIFY THE NAME.
 	 */
 	IM Instr_Memory(
 		// Outputs
-
+		.Instr(Instr),
 		// Inputs
+		.InstrAddr(AddrIn)
+	);
 
+	Adder adder(
+		// Outputs
+		.AddrOut(AddrOut),
+		// Inputs
+		.AddrIn(AddrIn)
+	);
+
+	IF_ID Fetch_Decode(
+		.Instr(Instr),
+		.InstrOut(Instr_out),
+		.clk(clk)
+	);
+
+	Control controller(
+		.OpCode(Instr_out[31:26]),
+		.RegWrite(RegWrite),
+		.RegDst(RegDst),
+		.ALUSrc(ALUSrc),
+		.MemWrite(MemWrite),
+		.MemRead(MemRead),
+		.MemtoReg(MemtoReg),
+		.ALUOp(ALUOp)
 	);
 
 	/* 
