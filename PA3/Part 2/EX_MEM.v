@@ -49,6 +49,8 @@ always@(posedge clk or negedge clk)
                 // Memory.
                 RegWrite_reg = RegWrite_in;
                 Mem2Reg_reg = Mem2Reg_in;
+                MemRead_reg = MemRead_in;
+                MemWrite_reg = MemWrite_in;
                 // Others
                 RdAddr_reg = RdAddr_in;
                 ALU_result_reg = ALU_result_in;
@@ -63,6 +65,8 @@ always@(posedge clk or negedge clk)
                 // Memory
                 RegWrite_out = RegWrite_reg;
                 Mem2Reg_out = Mem2Reg_reg;
+                MemRead_out = MemRead_reg;
+                MemWrite_out = MemWrite_reg;
                 // Others
                 RdAddr_out = RdAddr_reg;
                 ALU_result_out = ALU_result_reg;

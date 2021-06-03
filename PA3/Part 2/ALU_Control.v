@@ -14,6 +14,7 @@
 `define I_type_sub 2'b00
 // I-type add  
 `define I_type_add 2'b01
+
 module ALU_Control(
     input     [5:0] funct,
     input     [1:0] ALUOp,

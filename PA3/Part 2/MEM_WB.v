@@ -1,4 +1,4 @@
-module EX_MEM(
+module MEM_WB(
 
     // Write Back.
     input RegWrite_in, // WB
@@ -29,7 +29,7 @@ module EX_MEM(
     // Others.
     reg [5:0] RdAddr_reg;
     reg [31:0] MemAddr_reg;
-
+    reg [31:0] MemReadData_reg;
 
 
 always@(posedge clk or negedge clk)
@@ -43,7 +43,7 @@ always@(posedge clk or negedge clk)
                 // Others
                 RdAddr_reg = RdAddr_in;
                 MemAddr_reg = MemAddr_in;
-
+                MemReadData_reg = MemReadData_in;
             end
         else
             begin
@@ -54,6 +54,7 @@ always@(posedge clk or negedge clk)
                 // Others
                 RdAddr_out = RdAddr_reg;
                 MemAddr_out = MemAddr_reg;
+                MemReadData_out = MemReadData_reg;
             end
     end
 

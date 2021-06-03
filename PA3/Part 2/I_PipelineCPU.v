@@ -39,38 +39,16 @@ module I_PipelineCPU(
 	wire [31:0] Instr_out;
 
 // ID/EX.
-	wire [31:0] ALU_result;
-	wire [31:0] RsData;
-	wire [31:0] RsData_out;
-	wire [31:0] RtData;
-	wire [31:0] RtData_out;
-	wire [1:0] ALUOp;
-	wire [1:0] ALUOp_out;
 
-	wire [4:0] RdAddr_out;
+	// WB
 
-
-// EX/MEM
-	wire RegWrite_mem_out;
-	wire Mem2Reg_out;
-	wire [31:0] MemAddr;
-	wire [4:0] RdAddr_mem_out;
-	wire [31:0] MemWriteData;
-
-// MEM/WB
-	wire RegWrite_wb_out;
-	wire [31:0] ALU_result_wb_out;
-	wire [4:0] RdAddr_wb_out;
-
-// Controller
 	wire RegWrite;
+	wire MemtoReg;
+	wire MemtoReg_out;
 	wire RegWrite_out;
 
-	wire RegDst;
-	wire RegDst_out;
-	
-	wire ALUSrc;
-	wire ALSrc_out;
+
+	// memory.
 
 	wire MemWrite;
 	wire MemWrite_out;
@@ -78,9 +56,56 @@ module I_PipelineCPU(
 	wire MemRead;
 	wire MemRead_out;
 
-	wire MemtoReg;
-	wire MemtoReg_out;
-// ALUOp
+	// EX.
+	wire [1:0] ALUOp;
+	wire [1:0] ALUOp_out;
+
+	wire RegDst;
+	wire RegDst_out;
+	
+	wire ALUSrc;
+	wire ALSrc_out;
+
+	// Others.
+	wire [31:0] RsData;
+	wire [31:0] RsData_out;
+	wire [31:0] RtData;
+	wire [31:0] RtData_out;
+	wire [31:0] Sign_Extend; // immediate_in
+	wire [31:0] immediate_out; 
+	wire [4:0] RdAddr_out;
+	wire [4:0] RtAddr_out;
+
+// EX/MEM
+
+	//WB.
+	wire RegWrite_mem_out;
+	wire MemtoReg_mem_out;
+	//Memory
+	wire MemWrite_mem_out;
+	wire MemRead_mem_out;
+	// Others.
+	wire [31:0] ALU_result;
+	wire [31:0] MemAddr;
+
+	wire [31:0] MemWriteData; // RtData_out
+
+	wire [4:0] RdAddr_mem_out;
+
+// MEM/WB
+
+	// WB.
+	wire RegWrite_wb_out;
+	wire MemtoReg_wb_out;
+	// Others
+	wire [31:0] MemAddr_wb_out;
+	wire [4:0] RdAddr_wb_out;
+	wire [31:0] MemReadData;
+	wire [31:0] MemReadData_wb_out;
+
+
+
+// ALU controller
 	wire [5:0]Funct;	
 // MUX
 	wire [31:0]	MUX32A_result;
@@ -128,9 +153,159 @@ module I_PipelineCPU(
 	 */
 	RF Register_File(
 		// Outputs
-
+		.RsData(RsData),// TO ID/EX.
+		.RtData(RtData),// TO ID/EX.
 		// Inputs
-
+		.clk(clk),
+		.RegWrite(RegWrite_wb_out), // From MEM/WB. 
+		.RsAddr(Instr_out[25:21]),
+		.RtAddr(Instr_out[20:16]),
+		.RdAddr(RdAddr_wb_out),
+		.RdData(MUX32B_result) // From MEM/WB.
 	);
+
+	assign Sign_Extend[31:0] = Instr_out[15]?{16'hFFFF,Instr_out[15:0]}:{16'h0000,Instr_out[15:0]};
+	ID_EX Decode_Execute(
+		// Inputs
+		.clk(clk),
+		//WB
+			.RegWrite_in(RegWrite),
+			.Mem2Reg_in(MemtoReg),
+		// Memory
+			.MemRead_in(MemRead),
+			.MemWrite_in(MemWrite),
+		// EX
+			.ALUOp_in(ALUOp),
+			.RegDst_in(RegDst),
+			.ALU_Src_in(ALUSrc),
+		// Others.
+			.RsData_in(RsData),
+			.RtData_in(RtData),
+			.immediate_in(Sign_Extend),
+			.RdAddr_in(Instr_out[15:11]),
+			.RtAddr_in(Instr_out[20:16]),
+		
+		// Outputs
+
+		//WB
+			.RegWrite_out(RegWrite_out),
+			.Mem2Reg_out(MemtoReg_out),
+		// Memory
+			.MemRead_out(MemRead_out),
+			.MemWrite_out(MemWrite_out),
+		// EX
+			.ALUOp_out(ALUOp_out),
+			.RegDst_out(RegDst_out),
+			.ALU_Src_out(ALUSrc_out),
+		// Others
+			.RsData_out(RsData_out),
+			.RtData_out(RtData_out),
+			.immediate_out(immediate_out),
+			.RdAddr_out(RdAddr_out),
+			.RtAddr_out(RtAddr_out)
+	);
+
+	Mux32b A32(
+		.Src1(RtData_out),
+		.Src2(immediate_out),
+		.result(MUX32A_result),
+		.choose(ALUSrc_out)
+	);
+
+	ALU alu(
+		// Inputs
+		.Src1(RsData_out),
+		.Src2(MUX32A_result),
+		.Shamt(immediate_out[10:6]),
+		.Funct(Funct),
+		// Outputs
+		.result(ALU_result)
+	);
+
+	ALU_Control ALU_controller(
+		// Inputs
+		.funct(immediate_out[5:0]),
+		.ALUOp(ALUOp_out),
+		// Outputs
+		.Funct(Funct)
+	);
+
+	Mux5b mux5b(
+		.Src1(RtAddr_out),
+		.Src2(RdAddr_out),
+		.choose(RegDst_out),
+		.result(MUX5_result)
+	);
+
+
+	EX_MEM Execute_Memory(
+		// Inputs
+			.clk(clk),
+		// WB
+			.RegWrite_in(RegWrite_out),
+			.Mem2Reg_in(MemtoReg_out),
+		// MEM
+			.MemRead_in(MemRead_out),
+			.MemWrite_in(MemWrite_out),
+		// Others
+			.ALU_result_in(ALU_result),
+			.RtData_in(RtData_out),
+			.RdAddr_in(MUX5_result),
+			
+		//Outputs
+
+		// WB
+			.RegWrite_out(RegWrite_mem_out),
+			.Mem2Reg_out(MemtoReg_mem_out),
+		// Memory
+			.MemRead_out(MemRead_mem_out),
+			.MemWrite_out(MemWrite_mem_out),
+		// Others
+			.ALU_result_out(MemAddr),
+			.RtData_out(MemWriteData),
+			.RdAddr_out(RdAddr_mem_out)
+	);
+
+	
+	DM Data_Memory(
+		// Outputs
+		.MemReadData(MemReadData),
+		// Inputs
+		.MemAddr(MemAddr),
+		.MemWriteData(MemWriteData),
+		.MemWrite(MemWrite_mem_out),
+		.MemRead(MemRead_mem_out),
+		.clk(clk)
+	);
+
+	MEM_WB Memory_WriteBack(
+		// Inputs
+		.clk(clk),
+		// WB
+			.RegWrite_in(RegWrite_mem_out),
+			.Mem2Reg_in(MemtoReg_mem_out),
+		// Others.
+			.MemAddr_in(MemAddr),
+			.MemReadData_in(MemReadData),
+			.RdAddr_in(RdAddr_mem_out),
+	
+		//Outputs
+
+		//WB
+			.RegWrite_out(RegWrite_wb_out),
+			.Mem2Reg_out(MemtoReg_wb_out),
+		// Others
+			.MemAddr_out(MemAddr_wb_out),
+			.MemReadData_out(MemReadData_wb_out),
+			.RdAddr_out(RdAddr_wb_out)
+	);
+
+	Mux32b B32(
+		.Src1(MemAddr_wb_out),
+		.Src2(MemReadData_wb_out),
+		.result(MUX32B_result),
+		.choose(MemtoReg_wb_out)
+	);
+
 
 endmodule
