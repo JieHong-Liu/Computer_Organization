@@ -147,17 +147,21 @@ module FinalCPU(
 	);
 
 	HazardDetectionUnit HDU(
+		// Inputs.
 		.ID_EX_MemRead(MemRead_out),
 		.ID_EX_RegisterRt(RtAddr_out),
 		.IF_ID_RegisterRs(Instr_out[25:21]),
 		.IF_ID_RegisterRt(Instr_out[20:16]),
+		// Outputs
 		.Stall(Stall),
 		.PCWrite(PCWrite),
 		.IF_ID_Write(IF_ID_Write)
 	);
 
 	Control controller(
+		// Inputs
 		.OpCode(Instr_out[31:26]),
+		// Outputs
 		.RegWrite(RegWrite),
 		.RegDst(RegDst),
 		.ALUSrc(ALUSrc),
@@ -183,7 +187,7 @@ module FinalCPU(
 		.RdAddr(RdAddr_wb_out),
 		.RdData(MUX32B_result) // From MEM/WB.
 	);
-	assign totalSignal = {RegWrite,RegDst,ALUSrc,MemWrite,MemRead,MemtoReg,ALUOp};
+	assign totalSignal[7:0] = {RegWrite,RegDst,ALUSrc,MemWrite,MemRead,MemtoReg,ALUOp};
 	assign Sign_Extend[31:0] = Instr_out[15]?{16'hFFFF,Instr_out[15:0]}:{16'h0000,Instr_out[15:0]};
 	assign MUX8B_result = Stall?totalSignal:8'b0;
 	ID_EX Decode_Execute(
@@ -275,8 +279,8 @@ module FinalCPU(
 		.ID_EX_RegisterRt(RtAddr_out),
 		.MEM_WB_RegWrite(RegWrite_wb_out),
 		.MEM_WB_RegisterRd(RdAddr_wb_out),
-		.ForwardA(ForwardA),
-		.ForwardB(ForwardB)
+		.ForwardA(ForwardA[1:0]),
+		.ForwardB(ForwardB[1:0])
 	);
 
 	EX_MEM Execute_Memory(

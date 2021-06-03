@@ -27,13 +27,6 @@ always@(*)
             begin
                 ForwardB = 2'b10;
             end
-    end
-
-// Mem hazard
-always@(*)
-    begin
-        ForwardA =2'b00;
-        ForwardB = 2'b00;
         if(MEM_WB_RegWrite && MEM_WB_RegisterRd != 0 && (MEM_WB_RegisterRd == ID_EX_RegisterRs))
             begin
                 ForwardA = 2'b01;
@@ -43,6 +36,7 @@ always@(*)
                 ForwardB = 2'b01;
             end
     end
+
 
 endmodule
 

@@ -501,3 +501,590 @@ run -all
 # ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
 #    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
 # Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 02:44:16 on Jun 04,2021, Elapsed time: 2:45:44
+# Errors: 0, Warnings: 1
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of EX_MEM.v was successful.
+# Compile of FinalCPU.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of HazardDetectionUnit.v was successful.
+# Compile of ID_EX.v was successful.
+# Compile of IF_ID.v was successful.
+# Compile of IM.v was successful.
+# Compile of MEM_WB.v was successful.
+# Compile of MUX3to1.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_FinalCPU.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.tb_FinalCPU
+# vsim -gui work.tb_FinalCPU 
+# Start time: 03:02:13 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.RF
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
+# Loading work.Mux32b
+add wave -position insertpoint sim:/tb_FinalCPU/*
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of EX_MEM.v was successful.
+# Compile of FinalCPU.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of HazardDetectionUnit.v was successful.
+# Compile of ID_EX.v was successful.
+# Compile of IF_ID.v was successful.
+# Compile of IM.v was successful.
+# Compile of MEM_WB.v was successful.
+# Compile of MUX3to1.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_FinalCPU.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.tb_FinalCPU
+# End time: 03:09:06 on Jun 04,2021, Elapsed time: 0:06:53
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_FinalCPU 
+# Start time: 03:09:06 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.RF
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
+# Loading work.Mux32b
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+restart -f
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/Fetch_Decode/*
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/HDU/*
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/Register_File/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/alu/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/B/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/Decode_Execute/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/FU/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+quit -sim
+# End time: 03:51:41 on Jun 04,2021, Elapsed time: 0:42:35
+# Errors: 0, Warnings: 1
+vsim -gui work.tb_FinalCPU
+# vsim -gui work.tb_FinalCPU 
+# Start time: 03:52:09 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.RF
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
+# Loading work.Mux32b
+add wave -position insertpoint sim:/tb_FinalCPU/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of EX_MEM.v was successful.
+# Compile of FinalCPU.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of HazardDetectionUnit.v was successful.
+# Compile of ID_EX.v was successful.
+# Compile of IF_ID.v was successful.
+# Compile of IM.v was successful.
+# Compile of MEM_WB.v was successful.
+# Compile of MUX3to1.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_FinalCPU.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.tb_FinalCPU
+# End time: 03:59:09 on Jun 04,2021, Elapsed time: 0:07:00
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_FinalCPU 
+# Start time: 03:59:09 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.RF
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
+# Loading work.Mux32b
+add wave -position insertpoint sim:/tb_FinalCPU/*
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/Decode_Execute/*
+restart -f
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/A/*
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/B/*
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/alu/*
+run -all
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: тぃ﹚家舱
+# 
+# 
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# End time: 04:36:15 on Jun 04,2021, Elapsed time: 0:37:06
+# Errors: 0, Warnings: 1
