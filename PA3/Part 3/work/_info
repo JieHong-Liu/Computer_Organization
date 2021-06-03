@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 2
 vAdder
-Z0 !s110 1622750323
+Z0 !s110 1622753456
 !i10b 1
 !s100 :EF[GRjFaoj<GFccL>1Ib1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,14 +19,14 @@ Z2 dC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3
 w1622636283
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Adder.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Adder.v
-!i122 342
+!i122 378
 L0 1 9
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 OV;L;2020.3;71
 r1
 !s85 0
 31
-Z5 !s108 1622750323.000000
+Z5 !s108 1622753456.000000
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Adder.v|
 !i113 1
@@ -43,7 +43,7 @@ R2
 w1622636755
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU.v
-!i122 343
+!i122 379
 L0 6 21
 R3
 R4
@@ -67,7 +67,7 @@ R2
 w1622693755
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU_Control.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU_Control.v
-!i122 344
+!i122 380
 L0 18 31
 R3
 R4
@@ -82,7 +82,7 @@ R6
 R7
 n@a@l@u_@control
 vControl
-Z8 !s110 1622750324
+R0
 !i10b 1
 !s100 4[56SN92HM@cCz[TeNkg10
 R1
@@ -91,7 +91,7 @@ R2
 w1622747162
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Control.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Control.v
-!i122 345
+!i122 381
 L0 5 75
 R3
 R4
@@ -106,7 +106,7 @@ R6
 R7
 n@control
 vDM
-R8
+R0
 !i10b 1
 !s100 Rz]^SDSe9Pe8Ro39zlROf0
 R1
@@ -115,14 +115,14 @@ R2
 w1619785615
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/DM.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/DM.v
-!i122 346
+!i122 382
 L0 35 29
 R3
 R4
 r1
 !s85 0
 31
-Z9 !s108 1622750324.000000
+R5
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/DM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/DM.v|
 !i113 1
@@ -130,7 +130,7 @@ R6
 R7
 n@d@m
 vEX_MEM
-R8
+R0
 !i10b 1
 !s100 QTJ5>YlVEgi_]6:A3HHc40
 R1
@@ -139,14 +139,14 @@ R2
 w1622694424
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/EX_MEM.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/EX_MEM.v
-!i122 347
+!i122 383
 L0 1 79
 R3
 R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/EX_MEM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/EX_MEM.v|
 !i113 1
@@ -154,23 +154,23 @@ R6
 R7
 n@e@x_@m@e@m
 vFinalCPU
-R8
+Z8 !s110 1622753457
 !i10b 1
-!s100 [WNF3aSlB4j3i:g`^b=IY1
+!s100 bAQQB<1?ad5zAe8oV^8O^0
 R1
-IgI8XoO=j9[Z<R92Mb5eT90
+I8O5>^549hhkKXm2k[2CjJ3
 R2
-w1622749168
+w1622753452
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/FinalCPU.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/FinalCPU.v
-!i122 348
-L0 29 328
+!i122 384
+L0 29 337
 R3
 R4
 r1
 !s85 0
 31
-R9
+Z9 !s108 1622753457.000000
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/FinalCPU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/FinalCPU.v|
 !i113 1
@@ -187,7 +187,7 @@ R2
 w1622750321
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ForwardingUnit.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ForwardingUnit.v
-!i122 349
+!i122 385
 L0 1 41
 R3
 R4
@@ -211,7 +211,7 @@ R2
 w1622730449
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/HazardDetectionUnit.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/HazardDetectionUnit.v
-!i122 350
+!i122 386
 L0 1 29
 R3
 R4
@@ -235,7 +235,7 @@ R2
 w1622728899
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ID_EX.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ID_EX.v
-!i122 351
+!i122 387
 L0 1 111
 R3
 R4
@@ -259,7 +259,7 @@ R2
 w1622718373
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/IF_ID.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/IF_ID.v
-!i122 352
+!i122 388
 Z10 L0 1 19
 R3
 R4
@@ -283,7 +283,7 @@ R2
 w1622728748
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/IM.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/IM.v
-!i122 353
+!i122 389
 L0 35 19
 R3
 R4
@@ -298,7 +298,7 @@ R6
 R7
 n@i@m
 vMEM_WB
-Z11 !s110 1622750325
+R8
 !i10b 1
 !s100 5fjUFb<nLgfNKLlMi:DQ63
 R1
@@ -307,7 +307,7 @@ R2
 w1622694909
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MEM_WB.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MEM_WB.v
-!i122 354
+!i122 390
 L0 1 62
 R3
 R4
@@ -322,7 +322,7 @@ R6
 R7
 n@m@e@m_@w@b
 vMux32b
-R11
+Z11 !s110 1622753458
 !i10b 1
 !s100 gcNzLEG2lIj21O<a:]EX93
 R1
@@ -331,14 +331,14 @@ R2
 w1619713948
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v
-!i122 357
+!i122 393
 Z12 L0 1 10
 R3
 R4
 r1
 !s85 0
 31
-Z13 !s108 1622750325.000000
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v|
 !i113 1
@@ -346,7 +346,7 @@ R6
 R7
 n@mux32b
 vMUX3to1
-R11
+R8
 !i10b 1
 !s100 XcV=DceI:`KJbK=1RjA:j0
 R1
@@ -355,14 +355,14 @@ R2
 w1622728929
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v
-!i122 355
+!i122 391
 R10
 R3
 R4
 r1
 !s85 0
 31
-R13
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v|
 !i113 1
@@ -370,7 +370,7 @@ R6
 R7
 n@m@u@x3to1
 vMux5b
-R11
+R8
 !i10b 1
 !s100 9zDWm>ZOc]47=lNjiYaol3
 R1
@@ -379,14 +379,14 @@ R2
 w1619783251
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux5b.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux5b.v
-!i122 356
+!i122 392
 R12
 R3
 R4
 r1
 !s85 0
 31
-R13
+R9
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux5b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux5b.v|
 !i113 1
@@ -403,14 +403,14 @@ R2
 w1622712813
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/RF.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/RF.v
-!i122 358
+!i122 394
 L0 35 36
 R3
 R4
 r1
 !s85 0
 31
-R13
+Z13 !s108 1622753458.000000
 !s107 C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/RF.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/RF.v|
 !i113 1
@@ -427,7 +427,7 @@ R2
 w1622067534
 8C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v
 FC:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v
-!i122 359
+!i122 395
 L0 49 103
 R3
 R4

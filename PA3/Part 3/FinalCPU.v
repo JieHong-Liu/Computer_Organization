@@ -120,6 +120,8 @@ module FinalCPU(
 	wire [5:0]Funct;	
 // MUX
 	wire [4:0]  MUX5_result;
+
+	wire [31:0]	MUX32A_result;
 	wire [31:0] MUX32B_result;
 	/* 
 	 * Declaration of Instruction Memory.
@@ -247,10 +249,17 @@ module FinalCPU(
 		.result(MUX3to1B_result)
 	);
 
+	Mux32b A32(
+		.Src1(MUX3to1B_result),
+		.Src2(immediate_out),
+		.result(MUX32A_result),
+		.choose(ALUSrc_out)
+	);
+
 	ALU alu(
 		// Inputs
 		.Src1(MUX3to1A_result),
-		.Src2(MUX3to1B_result),
+		.Src2(MUX32A_result),
 		.Shamt(immediate_out[10:6]),
 		.Funct(Funct),
 		// Outputs
