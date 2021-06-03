@@ -1,5 +1,5 @@
 /*
- *	Template for Project 3 Part 3
+ *	Template for Project 2 Part 3
  *	Copyright (C) 2021  Lee Kai Xuan or any person belong ESSLab.
  *	All Right Reserved.
  *
@@ -23,31 +23,41 @@
  */
  
 /*
- * Macro of size declaration of instruction memory
+ * Macro of size declaration of data memory
  * CAUTION: DONT MODIFY THE NAME AND VALUE.
  */
-`define INSTR_MEM_SIZE	128	// Bytes
+`define DATA_MEM_SIZE	128	// Bytes
 
 /*
- * Declaration of Instruction Memory for this project.
+ * Declaration of Data Memory for this project.
  * CAUTION: DONT MODIFY THE NAME.
  */
-module IM(
+module DM(
 	// Outputs
-	output reg [31:0]	Instr,
+	output [31:0] MemReadData, 
 	// Inputs
-	input  [31:0]	InstrAddr
+	input [31:0] MemAddr,
+	input [31:0] MemWriteData,
+	input MemWrite,
+	input MemRead,
+	input clk
 );
 
 	/* 
-	 * Declaration of instruction memory.
+	 * Declaration of data memory.
 	 * CAUTION: DONT MODIFY THE NAME AND SIZE.
 	 */
-	reg [7:0]	InstrMem[0:`INSTR_MEM_SIZE - 1];
+	reg [7:0]DataMem[0:`DATA_MEM_SIZE - 1];
 
-	always@(InstrAddr)
+	assign MemReadData = MemRead? {DataMem[MemAddr],DataMem[MemAddr+1],DataMem[MemAddr+2],DataMem[MemAddr+3]}:32'b0;
+
+	always@(posedge clk)
 		begin
-			Instr[31:0] = {InstrMem[InstrAddr], InstrMem[InstrAddr+1],InstrMem[InstrAddr+2],InstrMem[InstrAddr+3]};
+			if(MemWrite == 1)
+				begin
+					{DataMem[MemAddr],DataMem[MemAddr+1],DataMem[MemAddr+2],DataMem[MemAddr+3]} = MemWriteData;
+				end
+			else;
 		end
 
 endmodule

@@ -34,9 +34,15 @@
  */
 module RF(
 	// Outputs
-
+	output [31:0] RsData,
+	output [31:0] RtData,
 	// Inputs
-
+	input RegWrite,
+	input clk,
+	input [4:0]	 RsAddr,
+	input [4:0]	 RtAddr,
+	input [4:0]	 RdAddr,
+	input [31:0] RdData
 );
 
 	/* 
@@ -44,5 +50,21 @@ module RF(
 	 * CAUTION: DONT MODIFY THE NAME AND SIZE.
 	 */
 	reg [31:0]R[0:`REG_MEM_SIZE - 1];
+	
+	assign	RsData 	= R[RsAddr];
+	assign	RtData 	= R[RtAddr];
+	
+	always@(posedge clk)
+		begin		
+			if(RegWrite == 1)
+				begin
+					R[RdAddr] = RdData;
+				end
+			else
+				begin
+					R[RdAddr] = R[RdAddr];
+				end
+		end
+
 
 endmodule

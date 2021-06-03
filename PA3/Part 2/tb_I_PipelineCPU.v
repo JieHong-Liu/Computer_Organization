@@ -32,14 +32,14 @@
 `define DELAY			1	// # * timescale
 `define INSTR_SIZE		8	// bit width
 `define INSTR_MAX		128	// bytes
-`define INSTR_FILE		"testbench/IM.dat"
+`define INSTR_FILE		"testbench/IM_part1.dat"
 `define REG_SIZE		32	// bit width
 `define REG_MAX			32	// words
-`define REG_FILE		"testbench/RF.dat"
+`define REG_FILE		"testbench/RF_part1.dat"
 `define DATA_SIZE		8	// bit width
 `define DATA_MAX		128	// bytes
 `define DATA_FILE		"testbench/DM.dat"
-`define OUTPUT_REG		"testbench/RF.out"
+`define OUTPUT_REG		"testbench/RF_part1.out"
 `define OUTPUT_DATA		"testbench/DM.out"
 
 // Declaration
