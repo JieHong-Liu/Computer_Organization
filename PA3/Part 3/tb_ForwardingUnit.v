@@ -14,4 +14,7 @@ module tb_ForwardingUnit(
     reg MEM_WB_RegWrite;
     wire [4:0] MEM_WB_RegisterRd;
 
+
+
+
 endmodule

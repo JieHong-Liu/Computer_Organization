@@ -1,7 +1,0 @@
-Thu Jun 03 23:57:24 CST 2021
-Trace back: invalid command name "SrcCommon::LoadDBSDialog"
-    while executing
-"SrcCommon::LoadDBSDialog"
-    ("after" script)
-  <2:C:/intelFPGA_pro/20.3/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name "SrcCommon::LoadDBSDialog"}
-  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name "SrcCommon::LoadDBSDialog"}

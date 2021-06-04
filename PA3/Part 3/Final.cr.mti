@@ -12,19 +12,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	Adder
 
-} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module MUX3to1
-
-Top level modules:
-	MUX3to1
-
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/Mux32b.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module Mux32b
 
 Top level modules:
 	Mux32b
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MUX3to1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module MUX3to1
+
+Top level modules:
+	MUX3to1
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU_Control.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU_Control.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
@@ -88,6 +88,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 
 Top level modules:
 	ID_EX
+
+} {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MuxStall.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/MuxStall.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module MuxStall
+
+Top level modules:
+	MuxStall
 
 } {} {}} {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU.v} {1 {vlog -work work -stats=none {C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/ALU.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020

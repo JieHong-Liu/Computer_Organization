@@ -27,6 +27,7 @@ always@(*)
             begin
                 ForwardB = 2'b10;
             end
+// MEM hazard.
         if(MEM_WB_RegWrite && MEM_WB_RegisterRd != 0 && (MEM_WB_RegisterRd == ID_EX_RegisterRs))
             begin
                 ForwardA = 2'b01;

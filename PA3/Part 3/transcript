@@ -14,12 +14,13 @@
 # Compile of MUX3to1.v was successful.
 # Compile of Mux5b.v was successful.
 # Compile of Mux32b.v was successful.
+# Compile of MuxStall.v was successful.
 # Compile of RF.v was successful.
 # Compile of tb_FinalCPU.v was successful.
-# 18 compiles, 0 failed with no errors.
+# 19 compiles, 0 failed with no errors.
 vsim -gui work.tb_FinalCPU
 # vsim -gui work.tb_FinalCPU 
-# Start time: 04:49:05 on Jun 04,2021
+# Start time: 19:15:59 on Jun 04,2021
 # Loading work.tb_FinalCPU
 # Loading work.FinalCPU
 # Loading work.IM
@@ -27,6 +28,7 @@ vsim -gui work.tb_FinalCPU
 # Loading work.IF_ID
 # Loading work.HazardDetectionUnit
 # Loading work.Control
+# Loading work.MuxStall
 # Loading work.RF
 # Loading work.ID_EX
 # Loading work.MUX3to1
@@ -39,6 +41,106 @@ vsim -gui work.tb_FinalCPU
 # Loading work.DM
 # Loading work.MEM_WB
 # WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+quit -sim
+# End time: 19:16:40 on Jun 04,2021, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 5
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of EX_MEM.v was successful.
+# Compile of FinalCPU.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of HazardDetectionUnit.v was successful.
+# Compile of ID_EX.v was successful.
+# Compile of IF_ID.v was successful.
+# Compile of IM.v was successful.
+# Compile of MEM_WB.v was successful.
+# Compile of MUX3to1.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of MuxStall.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_FinalCPU.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -gui work.tb_FinalCPU
+# vsim -gui work.tb_FinalCPU 
+# Start time: 19:17:19 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.MuxStall
+# Loading work.RF
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+# Compile of Adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of DM.v was successful.
+# Compile of EX_MEM.v was successful.
+# Compile of FinalCPU.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of HazardDetectionUnit.v was successful.
+# Compile of ID_EX.v was successful.
+# Compile of IF_ID.v was successful.
+# Compile of IM.v was successful.
+# Compile of MEM_WB.v was successful.
+# Compile of MUX3to1.v was successful.
+# Compile of Mux5b.v was successful.
+# Compile of Mux32b.v was successful.
+# Compile of MuxStall.v was successful.
+# Compile of RF.v was successful.
+# Compile of tb_FinalCPU.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -gui work.tb_FinalCPU
+# End time: 19:18:47 on Jun 04,2021, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_FinalCPU 
+# Start time: 19:18:47 on Jun 04,2021
+# Loading work.tb_FinalCPU
+# Loading work.FinalCPU
+# Loading work.IM
+# Loading work.Adder
+# Loading work.IF_ID
+# Loading work.HazardDetectionUnit
+# Loading work.Control
+# Loading work.RF
+# Loading work.MuxStall
+# Loading work.ID_EX
+# Loading work.MUX3to1
+# Loading work.Mux32b
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Mux5b
+# Loading work.ForwardingUnit
+# Loading work.EX_MEM
+# Loading work.DM
+# Loading work.MEM_WB
 add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
 run -all
 # ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
@@ -60,14 +162,15 @@ run -all
 # Compile of MUX3to1.v was successful.
 # Compile of Mux5b.v was successful.
 # Compile of Mux32b.v was successful.
+# Compile of MuxStall.v was successful.
 # Compile of RF.v was successful.
 # Compile of tb_FinalCPU.v was successful.
-# 18 compiles, 0 failed with no errors.
+# 19 compiles, 0 failed with no errors.
 vsim -gui work.tb_FinalCPU
-# End time: 04:51:07 on Jun 04,2021, Elapsed time: 0:02:02
-# Errors: 0, Warnings: 3
+# End time: 20:04:40 on Jun 04,2021, Elapsed time: 0:45:53
+# Errors: 0, Warnings: 2
 # vsim -gui work.tb_FinalCPU 
-# Start time: 04:51:07 on Jun 04,2021
+# Start time: 20:04:40 on Jun 04,2021
 # Loading work.tb_FinalCPU
 # Loading work.FinalCPU
 # Loading work.IM
@@ -76,6 +179,7 @@ vsim -gui work.tb_FinalCPU
 # Loading work.HazardDetectionUnit
 # Loading work.Control
 # Loading work.RF
+# Loading work.MuxStall
 # Loading work.ID_EX
 # Loading work.MUX3to1
 # Loading work.Mux32b
@@ -86,8 +190,30 @@ vsim -gui work.tb_FinalCPU
 # Loading work.EX_MEM
 # Loading work.DM
 # Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_FinalCPU/*
 add wave -position insertpoint sim:/tb_FinalCPU/UUT/*
 run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+restart -f
+add wave -position insertpoint sim:/tb_FinalCPU/*
+run -all
+# GetModuleFileName: 找不到指定的模組。
+# 
+# 
+# ** Warning: (vsim-7) Failed to open readmem file "testbench/DM.dat" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(88)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_FinalCPU
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
+#    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: 找不到指定的模組。
+# 
+# 
 # ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v(148)
 #    Time: 670 ns  Iteration: 1  Instance: /tb_FinalCPU
 # Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA3/Part 3/tb_FinalCPU.v line 148

@@ -38,8 +38,6 @@ module FinalCPU(
 // HazardDetectionUnit
 	wire Stall;
 	wire IF_ID_Write;
-	wire [7:0]totalSignal;
-	wire [7:0]MUX8B_result;
 
 // Forwarding Unit
 	wire [1:0] ForwardA;
@@ -54,27 +52,34 @@ module FinalCPU(
 	// WB
 
 	wire RegWrite;
-	wire MemtoReg;
-	wire MemtoReg_out;
+	wire RegWrite_in; // MUXSTALL
 	wire RegWrite_out;
+	wire MemtoReg;
+	wire MemtoReg_in;
+	wire MemtoReg_out;
 
 
 	// memory.
 
 	wire MemWrite;
+	wire MemWrite_in;
 	wire MemWrite_out;
 
 	wire MemRead;
+	wire MemRead_in;
 	wire MemRead_out;
 
 	// EX.
 	wire [1:0] ALUOp;
+	wire [1:0] ALUOp_in;
 	wire [1:0] ALUOp_out;
 
 	wire RegDst;
+	wire RegDst_in;
 	wire RegDst_out;
 	
 	wire ALUSrc;
+	wire ALUSrc_in;
 	wire ALUSrc_out;
 
 	// Others.
@@ -189,22 +194,41 @@ module FinalCPU(
 		.RdAddr(RdAddr_wb_out),
 		.RdData(MUX32B_result) // From MEM/WB.
 	);
-	assign totalSignal[7:0] = {RegWrite,RegDst,ALUSrc,MemWrite,MemRead,MemtoReg,ALUOp};
 	assign Sign_Extend[31:0] = Instr_out[15]?{16'hFFFF,Instr_out[15:0]}:{16'h0000,Instr_out[15:0]};
-	assign MUX8B_result = Stall?totalSignal:8'b0;
+
+	MuxStall MS(
+		// inputs.
+		.RegDst_in(RegDst),
+		.MemRead_in(MemRead),
+		.MemtoReg_in(MemtoReg),
+		.ALUOp_in(ALUOp),
+		.MemWrite_in(MemWrite),
+		.ALUSrc_in(ALUSrc),
+		.RegWrite_in(RegWrite),
+		.Stall_choose(Stall),
+		// Outputs
+		.RegDst_out(RegDst_in),
+		.MemRead_out(MemRead_in),
+		.MemtoReg_out(MemtoReg_in),
+		.ALUOp_out(ALUOp_in),
+		.MemWrite_out(MemWrite_in),
+		.ALUSrc_out(ALUSrc_in),
+		.RegWrite_out(RegWrite_in)
+	);
+
 	ID_EX Decode_Execute(
 		// Inputs
 		.clk(clk),
 		//WB
-			.RegWrite_in(totalSignal[7]),
-			.Mem2Reg_in(totalSignal[2]),
+			.RegWrite_in(RegWrite_in),
+			.Mem2Reg_in(MemtoReg_in),
 		// Memory
-			.MemRead_in(totalSignal[3]),
-			.MemWrite_in(totalSignal[4]),
+			.MemRead_in(MemRead_in),
+			.MemWrite_in(MemWrite_in),
 		// EX
-			.ALUOp_in(totalSignal[1:0]),
-			.RegDst_in(totalSignal[6]),
-			.ALU_Src_in(totalSignal[5]),
+			.ALUOp_in(ALUOp_in),
+			.RegDst_in(RegDst_in),
+			.ALU_Src_in(ALUSrc_in),
 		// Others.
 			.RsData_in(RsData),
 			.RtData_in(RtData),
@@ -243,8 +267,8 @@ module FinalCPU(
 
 	MUX3to1 B(
 		.Src1(RtData_out),
-		.Src2(MemAddr),
-		.Src3(MUX32B_result),
+		.Src2(MUX32B_result),
+		.Src3(MemAddr),
 		.choose(ForwardB),
 		.result(MUX3to1B_result)
 	);
@@ -303,7 +327,7 @@ module FinalCPU(
 			.MemWrite_in(MemWrite_out),
 		// Others
 			.ALU_result_in(ALU_result),
-			.RtData_in(RtData_out),
+			.RtData_in(MUX3to1B_result),
 			.RdAddr_in(MUX5_result),
 			
 		//Outputs
