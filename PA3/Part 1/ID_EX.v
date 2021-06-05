@@ -1,5 +1,4 @@
 module ID_EX(
-    
     input RegWrite_in, // WB
     input clk,
     input [1:0] ALUOp_in, // EX
@@ -8,7 +7,6 @@ module ID_EX(
     input [4:0] RdAddr_in,
     input [31:0] RsData_in,
     input [31:0] RtData_in,
-    
     output reg [1:0] ALUOp_out, //EX
     output reg [31:0] RsData_out,
     output reg [31:0] RtData_out,
@@ -16,7 +14,6 @@ module ID_EX(
     output reg [5:0] funct_out,
     output reg [4:0] shamt_out, 
     output reg RegWrite_out // WB
-
 );
 
     reg WB;
@@ -26,7 +23,6 @@ module ID_EX(
     reg [5:0] shamt_reg;
     reg [31:0] RsData_reg;
     reg [31:0] RtData_reg;
-
 
 always@(posedge clk or negedge clk)
     begin
@@ -51,7 +47,4 @@ always@(posedge clk or negedge clk)
                 RtData_out = RtData_reg;
             end
     end
-
-
-
 endmodule

@@ -57,10 +57,7 @@ module FinalCPU(
 	wire MemtoReg;
 	wire MemtoReg_in;
 	wire MemtoReg_out;
-
-
 	// memory.
-
 	wire MemWrite;
 	wire MemWrite_in;
 	wire MemWrite_out;

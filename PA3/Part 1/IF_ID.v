@@ -12,7 +12,4 @@ always@(posedge clk or negedge clk)
         else // when negedge clk, output the instruction reg to the instruction out.
             InstrOut = Instr_reg;
     end
-    
-
-
 endmodule

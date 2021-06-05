@@ -3,16 +3,13 @@ module ID_EX(
     // Write Back.
     input RegWrite_in, // WB
     input Mem2Reg_in,  //WB
-
     output reg RegWrite_out, // WB
     output reg Mem2Reg_out,// WB
-
     // Memory
     input MemRead_in,  
     input MemWrite_in, 
     output reg MemWrite_out,
     output reg MemRead_out,
-
     // EX.
     input [1:0] ALUOp_in, // EX
     input RegDst_in,
@@ -21,7 +18,6 @@ module ID_EX(
     output reg [1:0] ALUOp_out, //EX
     output reg RegDst_out,
     output reg ALU_Src_out,
-
     // Others.
     input clk,
     input [4:0] RdAddr_in,
@@ -35,8 +31,6 @@ module ID_EX(
     output reg [31:0] RtData_out,
     output reg [4:0] RdAddr_out,
     output reg [4:0] RtAddr_out
- 
-
 
 );
     // Temp register part.
@@ -100,7 +94,5 @@ always@(posedge clk or negedge clk)
                 immediate_out = immediate_reg;
             end
     end
-
-
 
 endmodule

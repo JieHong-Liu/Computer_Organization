@@ -4,7 +4,6 @@ module Mux5b(
     input choose,
     output [4:0]result
 );
-
 assign result = choose? Src2:Src1;
 
 endmodule

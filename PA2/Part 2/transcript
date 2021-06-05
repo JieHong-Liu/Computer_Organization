@@ -9,10 +9,11 @@
 # Compile of tb_I_FormatCPU.v was successful.
 # Compile of Mux5b.v was successful.
 # Compile of Mux32b.v was successful.
-# 11 compiles, 0 failed with no errors.
+# Compile of tb_Control.v was successful.
+# 12 compiles, 0 failed with no errors.
 vsim -gui work.tb_I_FormatCPU
 # vsim -gui work.tb_I_FormatCPU 
-# Start time: 10:44:04 on Apr 30,2021
+# Start time: 13:34:06 on May 14,2021
 # Loading work.tb_I_FormatCPU
 # Loading work.I_FormatCPU
 # Loading work.IM
@@ -24,42 +25,17 @@ vsim -gui work.tb_I_FormatCPU
 # Loading work.ALU_Control
 # Loading work.Control
 # Loading work.DM
+add wave -position insertpoint sim:/tb_I_FormatCPU/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jieho  Hostname: DESKTOP-06Q83SQ  ProcessID: 10216
+#           Attempting to use alternate WLF file "./wlft3tktk0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3tktk0
+run -all
+# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
+#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
+# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
 # WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/tb_I_FormatCPU/*
-run -all
-# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
-#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
-# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
-# Compile of Adder.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_Control.v was successful.
-# Compile of Control.v was successful.
-# Compile of DM.v was successful.
-# Compile of I_FormatCPU.v was successful.
-# Compile of IM.v was successful.
-# Compile of RF.v was successful.
-# Compile of tb_I_FormatCPU.v was successful.
-# Compile of Mux5b.v was successful.
-# Compile of Mux32b.v was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.tb_I_FormatCPU
-# End time: 10:46:44 on Apr 30,2021, Elapsed time: 0:02:40
-# Errors: 0, Warnings: 3
-# vsim -gui work.tb_I_FormatCPU 
-# Start time: 10:46:44 on Apr 30,2021
-# Loading work.tb_I_FormatCPU
-# Loading work.I_FormatCPU
-# Loading work.IM
-# Loading work.Adder
-# Loading work.Mux5b
-# Loading work.RF
-# Loading work.Mux32b
-# Loading work.ALU
-# Loading work.ALU_Control
-# Loading work.Control
-# Loading work.DM
-add wave -position insertpoint sim:/tb_I_FormatCPU/*
-run -all
-# ** Note: $stop    : C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v(146)
-#    Time: 630 ns  Iteration: 1  Instance: /tb_I_FormatCPU
-# Break in NamedBeginStat StimuliProcess at C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/tb_I_FormatCPU.v line 146
+# End time: 13:40:14 on May 14,2021, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 4
+# Closing project C:/Users/jieho/Documents/coding/HDL/Computer_Organization/PA2/Part 2/I_type.mpf

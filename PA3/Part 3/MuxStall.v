@@ -17,7 +17,6 @@ output reg RegWrite_out
 );
 
 always@(*) begin
-
     if (Stall_choose==0)
     begin
         RegDst_out	=RegDst_in;
@@ -28,7 +27,6 @@ always@(*) begin
         ALUSrc_out	=ALUSrc_in;
         RegWrite_out	=RegWrite_in;
     end
-
     if (Stall_choose==1)
     begin
         RegDst_out	=0;
@@ -39,7 +37,5 @@ always@(*) begin
         ALUSrc_out	=0;
         RegWrite_out	=0;
     end
-
-
 end
 endmodule

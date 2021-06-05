@@ -51,11 +51,11 @@ always@(OpCode)
                 begin
                     RegWrite = 1'b 0;
                     ALUOp = `I_type_add;
-                    // RegDst = 1'b x; // I format -> write into Rt
+                    RegDst = 1'b x; // I format -> write into Rt
                     ALUSrc = 1;
                     MemWrite = 1;
                     MemRead = 0;
-                    // MemtoReg = 1'b x; // Since the SW would not read the value from memory.
+                    MemtoReg = 1'b x; // Since the SW would not read the value from memory.
                 end
             6'd 17: // lw
                 begin
@@ -71,7 +71,6 @@ always@(OpCode)
                 begin
                     MemWrite = 0;
                     RegWrite = 0;
-                    
                 end
         endcase
     

@@ -74,7 +74,7 @@ module SimpleCPU(
 		wire [31:0] Instr;
 
 
-	assign 	Sign_Extend = {16'h0000,Instr[15:0]};
+	assign 	Sign_Extend = Instr[15]?{16'hFFFF,Instr[15:0]}:{16'h0000,Instr[15:0]};
 
 	/* 
 	 * Declaration of Instruction Memory.
@@ -158,7 +158,7 @@ module SimpleCPU(
 
 	Mux32b D32(
 		.Src1(MUX32C_result),
-		.Src2({4'b0000,Instr[25:0],2'b00}),// 4 + 26 + 2 = 32;
+		.Src2({AdderDataOut1[31:28],Instr[25:0],2'b00}),// 4 + 26 + 2 = 32;
 		.result(AddrOut),
 		.choose(Jump)
 	);

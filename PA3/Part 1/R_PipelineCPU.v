@@ -77,20 +77,17 @@ module R_PipelineCPU(
 		// Inputs
 		.InstrAddr(AddrIn)
 	);
-
 	Adder adder(
 		// Outputs
 		.AddrOut(AddrOut),
 		// Inputs
 		.AddrIn(AddrIn)
 	);
-
 	IF_ID Fetch_Decode(
 		.Instr(Instr),
 		.InstrOut(Instr_out),
 		.clk(clk)
 	);
-
 	ID_EX Decode_Execute(
 		// Inputs
 		.RegWrite_in(RegWrite),

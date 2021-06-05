@@ -27,7 +27,6 @@
  * CAUTION: DONT MODIFY THE NAME AND VALUE.
  */
 `define INSTR_MEM_SIZE	128	// Bytes
-
 /*
  * Declaration of Instruction Memory for this project.
  * CAUTION: DONT MODIFY THE NAME.

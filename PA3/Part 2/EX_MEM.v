@@ -1,20 +1,15 @@
 module EX_MEM(
-
     // Write Back.
     input RegWrite_in, // WB
     input Mem2Reg_in,  //WB
-
     output reg RegWrite_out, // WB
     output reg Mem2Reg_out,// WB
-
     // Memory
     input MemRead_in,  
     input MemWrite_in, 
     output reg MemWrite_out,
     output reg MemRead_out,
-
     // Others.
-
     input clk,
     input [31:0] ALU_result_in,
     input [4:0] RdAddr_in,
@@ -55,7 +50,6 @@ always@(posedge clk or negedge clk)
                 RdAddr_reg = RdAddr_in;
                 ALU_result_reg = ALU_result_in;
                 RtData_reg = RtData_in;
-
             end
         else
             begin
@@ -71,9 +65,6 @@ always@(posedge clk or negedge clk)
                 RdAddr_out = RdAddr_reg;
                 ALU_result_out = ALU_result_reg;
                 RtData_out = RtData_reg;
-
             end
     end
-
-
 endmodule
